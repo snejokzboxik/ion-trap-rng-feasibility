@@ -1,0 +1,29 @@
+stage: M3a
+purpose: bounded deterministic single-ion integration in the saved M2b.2 ideal-conductor vacuum field
+species:
+  name: 40Ca+
+  mass_kg: 6.635944361756e-26  # 39.96259098 u
+  charge_C: 1.602176634e-19
+geometry:
+  r0_m: 1.0e-6
+  rf_field_file: results/m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz
+  dc_field_file: results/m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz
+  json_file: results/m2b2_p2_effective_h0.75_hc0.18_dc0.075.json
+  geometry_model: four separate finite hyperbolic RF electrodes, finite length 10r0, annular DC rings at z=+/-5.5r0, grounded outer enclosure, empty vacuum, ideal conductors, polygonal boundaries
+drive:
+  rf_differential_peak_V: 10.0
+  target_mathieu_q_magnitude: 0.2
+  axial_secular_target_Hz: 1.0e6
+  dc_voltage_per_ring_V: derive_from_P2_Hzz
+integration:
+  max_duration_rf_periods: 20
+  rk4_steps_per_rf_period: [40, 80, 160]
+  independent_method: DOP853
+  initial_conditions_r0: [[0.02, 0, 0], [0.08, 0, 0], [0, 0, 0.10], [0.05, 0.04, 0.08]]
+  rf_phases_rad: [0, 1.5707963267948966]
+  surface_escape: absorbing if a query leaves the FEM mesh; no electrode boundary extrapolation
+scope:
+  stochastic_forces: false
+  ion_ion_interactions: false
+  broad_sweeps: false
+  remote_computation: false

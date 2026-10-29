@@ -1,0 +1,645 @@
+{
+  "scope": "bounded 2D electrostatic FEM and lumped receiver screens; no 3D, trajectories or RNG performance claim",
+  "configuration": "configs/m2a_readout.yaml",
+  "geometry": {
+    "electrodes": [
+      "right",
+      "left",
+      "top",
+      "bottom"
+    ],
+    "front_faces": "exact sampled hyperbola branches x^2-y^2=+/-r0^2",
+    "thickness_over_r0": 0.1,
+    "extent_over_r0": 1.5,
+    "end_cap_radius_over_r0": 0.05,
+    "outer_boundary": "grounded square at +/-6.0r0 for finite-device model",
+    "mesh_levels_hmin_over_r0": [
+      0.05,
+      0.025,
+      0.0125,
+      0.00625,
+      0.003125
+    ],
+    "element": "linear triangular P1; boundary curves resolved by CAD-ready fine polygonal sampling",
+    "r0_m": 1e-06,
+    "electrode_length_approximation_m": 9.999999999999999e-06
+  },
+  "mesh_levels": [
+    {
+      "level": 1,
+      "h_min_over_r0": 0.05,
+      "nodes": 5944,
+      "triangles": 10742,
+      "ideal_relative_potential_l2": 0.00016274512247214584,
+      "ideal_relative_field_l2": 0.02467258410215498,
+      "ideal_relative_hessian": 0.007688794498095065,
+      "drive_quadrupole_hessian_v_per_r0_2": 10.11384186850134,
+      "drive_center_gradient_fraction": 0.002545304951209462,
+      "drive_quadrupole_residual_fraction": 0.0010028564756011044,
+      "drive_higher_multipole_fraction_at_0_4r0": 0.011464005412162503,
+      "single_electrode_weighting_gradient_per_r0": 0.4003987654696676,
+      "paired_rf_weighting_gradient_per_r0": 0.000643606571973346,
+      "differential_weighting_gradient_per_r0": 0.4007172393621931,
+      "per_electrode_capacitance_f_per_m": 7.320199971265541e-11,
+      "differential_port_capacitance_f_per_m": 3.761851931695342e-11
+    },
+    {
+      "level": 2,
+      "h_min_over_r0": 0.025,
+      "nodes": 9080,
+      "triangles": 16398,
+      "ideal_relative_potential_l2": 0.00015363003611989002,
+      "ideal_relative_field_l2": 0.02464446523024124,
+      "ideal_relative_hessian": 0.004221750802777416,
+      "drive_quadrupole_hessian_v_per_r0_2": 10.073857728639783,
+      "drive_center_gradient_fraction": 0.0006723584569294336,
+      "drive_quadrupole_residual_fraction": 0.0021456673241261157,
+      "drive_higher_multipole_fraction_at_0_4r0": 0.00479715720445114,
+      "single_electrode_weighting_gradient_per_r0": 0.39926893901540605,
+      "paired_rf_weighting_gradient_per_r0": 0.00016934353824814982,
+      "differential_weighting_gradient_per_r0": 0.3993513931840218,
+      "per_electrode_capacitance_f_per_m": 7.306415224776906e-11,
+      "differential_port_capacitance_f_per_m": 3.7550878627069426e-11
+    },
+    {
+      "level": 3,
+      "h_min_over_r0": 0.0125,
+      "nodes": 15151,
+      "triangles": 27372,
+      "ideal_relative_potential_l2": 0.00015455213200089166,
+      "ideal_relative_field_l2": 0.024600614792189168,
+      "ideal_relative_hessian": 0.0033233133125159476,
+      "drive_quadrupole_hessian_v_per_r0_2": 10.062829270418359,
+      "drive_center_gradient_fraction": 0.00028391987201722984,
+      "drive_quadrupole_residual_fraction": 0.0011167218206344048,
+      "drive_higher_multipole_fraction_at_0_4r0": 0.003986890993193277,
+      "single_electrode_weighting_gradient_per_r0": 0.3990571088924097,
+      "paired_rf_weighting_gradient_per_r0": 7.141478879748339e-05,
+      "differential_weighting_gradient_per_r0": 0.3990773506534017,
+      "per_electrode_capacitance_f_per_m": 7.29850121633143e-11,
+      "differential_port_capacitance_f_per_m": 3.751113256063227e-11
+    },
+    {
+      "level": 4,
+      "h_min_over_r0": 0.00625,
+      "nodes": 26478,
+      "triangles": 47778,
+      "ideal_relative_potential_l2": 0.00015590566978647974,
+      "ideal_relative_field_l2": 0.02455867533195555,
+      "ideal_relative_hessian": 0.003386749322196065,
+      "drive_quadrupole_hessian_v_per_r0_2": 10.091797529704074,
+      "drive_center_gradient_fraction": 0.0008173540625470216,
+      "drive_quadrupole_residual_fraction": 0.000490790887270465,
+      "drive_higher_multipole_fraction_at_0_4r0": 0.002209028616843483,
+      "single_electrode_weighting_gradient_per_r0": 0.3994016648211224,
+      "paired_rf_weighting_gradient_per_r0": 0.00020619945802606817,
+      "differential_weighting_gradient_per_r0": 0.39950278449601556,
+      "per_electrode_capacitance_f_per_m": 7.296588450534004e-11,
+      "differential_port_capacitance_f_per_m": 3.750197988122153e-11
+    },
+    {
+      "level": 5,
+      "h_min_over_r0": 0.003125,
+      "nodes": 49135,
+      "triangles": 88544,
+      "ideal_relative_potential_l2": 0.00015457022127871782,
+      "ideal_relative_field_l2": 0.024566894524664224,
+      "ideal_relative_hessian": 0.0017298528870984171,
+      "drive_quadrupole_hessian_v_per_r0_2": 10.081003844795559,
+      "drive_center_gradient_fraction": 0.0006971950420403595,
+      "drive_quadrupole_residual_fraction": 0.00041672681611447333,
+      "drive_higher_multipole_fraction_at_0_4r0": 0.0020904173066851146,
+      "single_electrode_weighting_gradient_per_r0": 0.3998287515394517,
+      "paired_rf_weighting_gradient_per_r0": 0.00017568398068173254,
+      "differential_weighting_gradient_per_r0": 0.3997409797747755,
+      "per_electrode_capacitance_f_per_m": 7.295237571123248e-11,
+      "differential_port_capacitance_f_per_m": 3.7495303305543014e-11
+    }
+  ],
+  "boundary_curve_refinement_at_h1_over_160": [
+    {
+      "n_curve_samples_per_branch": 50,
+      "h_min_over_r0": 0.00625,
+      "weighting_gradient_per_r0": 0.3995646146201545,
+      "capacitance_F_per_m": 7.295289667309758e-11,
+      "differential_port_capacitance_F_per_m": 3.7495485727719677e-11,
+      "drive_hessian_V_per_r0_2": 10.084286416652159
+    },
+    {
+      "n_curve_samples_per_branch": 100,
+      "h_min_over_r0": 0.00625,
+      "weighting_gradient_per_r0": 0.39950278449601556,
+      "capacitance_F_per_m": 7.296588450534004e-11,
+      "differential_port_capacitance_F_per_m": 3.750197988122153e-11,
+      "drive_hessian_V_per_r0_2": 10.091797529704074
+    },
+    {
+      "n_curve_samples_per_branch": 200,
+      "h_min_over_r0": 0.00625,
+      "weighting_gradient_per_r0": 0.3995295616818883,
+      "capacitance_F_per_m": 7.297092008248844e-11,
+      "differential_port_capacitance_F_per_m": 3.750434416515188e-11,
+      "drive_hessian_V_per_r0_2": 10.084981619554505
+    }
+  ],
+  "readout": {
+    "species": "40Ca+",
+    "f_secular_Hz": 174784224.51498774,
+    "differential_weighting_gradient_per_m": 399740.9797747755,
+    "pair_connected_weighting_gradient_per_m": 175.68398068173255,
+    "pair_cancellation_fraction_relative_single": 0.00043939806731081856,
+    "single_electrode_capacitance_per_length_F_per_m": 7.295237571123248e-11,
+    "approx_single_electrode_capacitance_F": 7.295237571123247e-16,
+    "differential_port_capacitance_per_length_F_per_m": 3.7495303305543014e-11,
+    "approx_differential_port_capacitance_F": 3.749530330554301e-16,
+    "peak_image_current_A_by_amplitude_nm": {
+      "1.0": 7.033494734659167e-14,
+      "10.0": 7.033494734659166e-13,
+      "100.0": 7.033494734659167e-12,
+      "500.0": 3.516747367329584e-11
+    },
+    "resistive_parallel_RC_scenarios": [
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 6718.967475435202,
+        "signal_v_rms_or_peak_as_input": 4.7257822360819685e-08,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-11,
+        "noise_v_rms": 2.807038844962434e-07,
+        "amplitude_ratio": 0.1683547145976604,
+        "pole_hz": 158560416.00286728
+      },
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 10000.0,
+        "z_signal_ohm": 6718.967475435202,
+        "signal_v_rms_or_peak_as_input": 4.7257822360819685e-08,
+        "thermal_current_noise_a_rms": 1.2871591976131002e-10,
+        "noise_v_rms": 8.876636230649556e-07,
+        "amplitude_ratio": 0.05323843529562048,
+        "pole_hz": 158560416.00286728
+      },
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 100000.0,
+        "z_signal_ohm": 6718.967475435202,
+        "signal_v_rms_or_peak_as_input": 4.7257822360819685e-08,
+        "thermal_current_noise_a_rms": 4.070354775692163e-10,
+        "noise_v_rms": 2.807038844962434e-06,
+        "amplitude_ratio": 0.01683547145976604,
+        "pole_hz": 158560416.00286728
+      },
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 9071.407462884437,
+        "signal_v_rms_or_peak_as_input": 6.380369662614558e-08,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-12,
+        "noise_v_rms": 7.323728296456339e-08,
+        "amplitude_ratio": 0.8711914757544685,
+        "pole_hz": 1585604.1600286728
+      },
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 10000.0,
+        "z_signal_ohm": 9071.407462884437,
+        "signal_v_rms_or_peak_as_input": 6.380369662614558e-08,
+        "thermal_current_noise_a_rms": 1.2871591976131004e-11,
+        "noise_v_rms": 2.3159662381026903e-07,
+        "amplitude_ratio": 0.27549493415074783,
+        "pole_hz": 1585604.1600286728
+      },
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 100000.0,
+        "z_signal_ohm": 9071.407462884437,
+        "signal_v_rms_or_peak_as_input": 6.380369662614558e-08,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-11,
+        "noise_v_rms": 7.323728296456339e-07,
+        "amplitude_ratio": 0.08711914757544685,
+        "pole_hz": 1585604.1600286728
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 906.490724009898,
+        "signal_v_rms_or_peak_as_input": 6.375797734340994e-09,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-11,
+        "noise_v_rms": 7.322172193581907e-08,
+        "amplitude_ratio": 0.08707522256755397,
+        "pole_hz": 15909528.983042859
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 10000.0,
+        "z_signal_ohm": 906.490724009898,
+        "signal_v_rms_or_peak_as_input": 6.375797734340994e-09,
+        "thermal_current_noise_a_rms": 1.2871591976131002e-10,
+        "noise_v_rms": 2.3154741551670164e-07,
+        "amplitude_ratio": 0.027535603107956542,
+        "pole_hz": 15909528.983042859
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 100000.0,
+        "z_signal_ohm": 906.490724009898,
+        "signal_v_rms_or_peak_as_input": 6.375797734340994e-09,
+        "thermal_current_noise_a_rms": 4.070354775692163e-10,
+        "noise_v_rms": 7.322172193581908e-07,
+        "amplitude_ratio": 0.008707522256755395,
+        "pole_hz": 15909528.983042859
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 910.2378911142646,
+        "signal_v_rms_or_peak_as_input": 6.402153414439444e-09,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-12,
+        "noise_v_rms": 6.335400755699878e-08,
+        "amplitude_ratio": 0.10105364540166634,
+        "pole_hz": 159095.2898304286
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 10000.0,
+        "z_signal_ohm": 910.2378911142646,
+        "signal_v_rms_or_peak_as_input": 6.402153414439444e-09,
+        "thermal_current_noise_a_rms": 1.2871591976131004e-11,
+        "noise_v_rms": 2.0034296277963594e-07,
+        "amplitude_ratio": 0.03195596853322665,
+        "pole_hz": 159095.2898304286
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 100000.0,
+        "z_signal_ohm": 910.2378911142646,
+        "signal_v_rms_or_peak_as_input": 6.402153414439444e-09,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-11,
+        "noise_v_rms": 6.335400755699879e-07,
+        "amplitude_ratio": 0.010105364540166632,
+        "pole_hz": 159095.2898304286
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 91.05076796247738,
+        "signal_v_rms_or_peak_as_input": 6.404050970507582e-10,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-11,
+        "noise_v_rms": 6.335404589233119e-08,
+        "amplitude_ratio": 0.01010835358706392,
+        "pole_hz": 1591489.7575277875
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 10000.0,
+        "z_signal_ohm": 91.05076796247738,
+        "signal_v_rms_or_peak_as_input": 6.404050970507582e-10,
+        "thermal_current_noise_a_rms": 1.2871591976131002e-10,
+        "noise_v_rms": 2.0034308400660122e-07,
+        "amplitude_ratio": 0.0031965420729455135,
+        "pole_hz": 1591489.7575277875
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "R_ohm": 10000.0,
+        "ENBW_Hz": 100000.0,
+        "z_signal_ohm": 91.05076796247738,
+        "signal_v_rms_or_peak_as_input": 6.404050970507582e-10,
+        "thermal_current_noise_a_rms": 4.070354775692163e-10,
+        "noise_v_rms": 6.33540458923312e-07,
+        "amplitude_ratio": 0.0010108353587063917,
+        "pole_hz": 1591489.7575277875
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 91.05454198435697,
+        "signal_v_rms_or_peak_as_input": 6.404316416137769e-10,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-12,
+        "noise_v_rms": 6.32466394010616e-08,
+        "amplitude_ratio": 0.01012593945984468,
+        "pole_hz": 15914.897575277875
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 10000.0,
+        "z_signal_ohm": 91.05454198435697,
+        "signal_v_rms_or_peak_as_input": 6.404316416137769e-10,
+        "thermal_current_noise_a_rms": 1.2871591976131004e-11,
+        "noise_v_rms": 2.0000343485870234e-07,
+        "amplitude_ratio": 0.003202103214208429,
+        "pole_hz": 15914.897575277875
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "R_ohm": 1000000.0,
+        "ENBW_Hz": 100000.0,
+        "z_signal_ohm": 91.05454198435697,
+        "signal_v_rms_or_peak_as_input": 6.404316416137769e-10,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-11,
+        "noise_v_rms": 6.324663940106162e-07,
+        "amplitude_ratio": 0.0010125939459844676,
+        "pole_hz": 15914.897575277875
+      }
+    ],
+    "tuned_parallel_RLC_scenarios": [
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "Q": 100,
+        "ENBW_Hz": 873921.1225749387,
+        "q_loaded_lumped": 100.0,
+        "required_inductance_h": 8.260578149902194e-06,
+        "resonator_bandwidth_hz": 1747842.2451498774,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016122,
+        "signal_v_peak": 6.380632200510195e-06,
+        "noise_v_rms": 0.0001103909622119558,
+        "amplitude_ratio": 0.05780031329248751
+      },
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "Q": 1000,
+        "ENBW_Hz": 87392.11225749386,
+        "q_loaded_lumped": 1000.0,
+        "required_inductance_h": 8.260578149902194e-06,
+        "resonator_bandwidth_hz": 174784.22451498773,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016122,
+        "signal_v_peak": 6.380632200510195e-05,
+        "noise_v_rms": 0.00011048541818141657,
+        "amplitude_ratio": 0.5775089876596408
+      },
+      {
+        "C_parasitic_F": 1e-13,
+        "C_total_F": 1.0037495303305543e-13,
+        "Q": 10000,
+        "ENBW_Hz": 8739.211225749386,
+        "q_loaded_lumped": 10000.0,
+        "required_inductance_h": 8.260578149902194e-06,
+        "resonator_bandwidth_hz": 17478.422451498773,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016122,
+        "signal_v_peak": 0.0006380632200510194,
+        "noise_v_rms": 0.00011156525044090366,
+        "amplitude_ratio": 5.719193185417558
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "Q": 100,
+        "ENBW_Hz": 873921.1225749387,
+        "q_loaded_lumped": 99.99999999999999,
+        "required_inductance_h": 8.288443661133116e-07,
+        "resonator_bandwidth_hz": 1747842.2451498776,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016123,
+        "signal_v_peak": 6.402156066638839e-07,
+        "noise_v_rms": 3.500901816701816e-05,
+        "amplitude_ratio": 0.018287162570786636
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "Q": 1000,
+        "ENBW_Hz": 87392.11225749386,
+        "q_loaded_lumped": 999.9999999999999,
+        "required_inductance_h": 8.288443661133116e-07,
+        "resonator_bandwidth_hz": 174784.22451498776,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016123,
+        "signal_v_peak": 6.402156066638839e-06,
+        "noise_v_rms": 3.4967512802707076e-05,
+        "amplitude_ratio": 0.18308868871403414
+      },
+      {
+        "C_parasitic_F": 1e-12,
+        "C_total_F": 1.0003749530330554e-12,
+        "Q": 10000,
+        "ENBW_Hz": 8739.211225749386,
+        "q_loaded_lumped": 10000.0,
+        "required_inductance_h": 8.288443661133116e-07,
+        "resonator_bandwidth_hz": 17478.422451498773,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016122,
+        "signal_v_peak": 6.40215606663884e-05,
+        "noise_v_rms": 3.499756400529634e-05,
+        "amplitude_ratio": 1.8293147676421058
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "Q": 100,
+        "ENBW_Hz": 873921.1225749387,
+        "q_loaded_lumped": 100.0,
+        "required_inductance_h": 8.291240555643755e-08,
+        "resonator_bandwidth_hz": 1747842.2451498774,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016122,
+        "signal_v_peak": 6.404316442686638e-08,
+        "noise_v_rms": 1.1213744862369952e-05,
+        "amplitude_ratio": 0.0057111308677778565
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "Q": 1000,
+        "ENBW_Hz": 87392.11225749386,
+        "q_loaded_lumped": 1000.0,
+        "required_inductance_h": 8.291240555643755e-08,
+        "resonator_bandwidth_hz": 174784.22451498773,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016122,
+        "signal_v_peak": 6.404316442686638e-07,
+        "noise_v_rms": 1.107268605962183e-05,
+        "amplitude_ratio": 0.05783886952273409
+      },
+      {
+        "C_parasitic_F": 1e-11,
+        "C_total_F": 1.0000374953033054e-11,
+        "Q": 10000,
+        "ENBW_Hz": 8739.211225749386,
+        "q_loaded_lumped": 10000.000000000002,
+        "required_inductance_h": 8.291240555643755e-08,
+        "resonator_bandwidth_hz": 17478.42245149877,
+        "postfilter_lorentzian_noise_factor": 0.9272952180016122,
+        "signal_v_peak": 6.404316442686638e-06,
+        "noise_v_rms": 1.1059563858926176e-05,
+        "amplitude_ratio": 0.5790749548878198
+      }
+    ],
+    "receiver_voltage_noise_sensitivity": [
+      {
+        "receiver_voltage_noise_V_rt_Hz": 5e-10,
+        "receiver_current_noise_A_rt_Hz": 2e-15,
+        "parasitic_C_F": 1e-12,
+        "parallel_R_ohm": 1000000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 910.2378911142646,
+        "signal_v_rms_or_peak_as_input": 6.402153414439444e-09,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-12,
+        "noise_v_rms": 1.6239774429845344e-08,
+        "amplitude_ratio": 0.39422674508788813,
+        "pole_hz": 159095.2898304286
+      },
+      {
+        "receiver_voltage_noise_V_rt_Hz": 2e-09,
+        "receiver_current_noise_A_rt_Hz": 2e-15,
+        "parasitic_C_F": 1e-12,
+        "parallel_R_ohm": 1000000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 910.2378911142646,
+        "signal_v_rms_or_peak_as_input": 6.402153414439444e-09,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-12,
+        "noise_v_rms": 6.335400755699878e-08,
+        "amplitude_ratio": 0.10105364540166634,
+        "pole_hz": 159095.2898304286
+      },
+      {
+        "receiver_voltage_noise_V_rt_Hz": 1e-08,
+        "receiver_current_noise_A_rt_Hz": 2e-15,
+        "parasitic_C_F": 1e-12,
+        "parallel_R_ohm": 1000000.0,
+        "ENBW_Hz": 1000.0,
+        "z_signal_ohm": 910.2378911142646,
+        "signal_v_rms_or_peak_as_input": 6.402153414439444e-09,
+        "thermal_current_noise_a_rms": 4.0703547756921634e-12,
+        "noise_v_rms": 3.1624947474032627e-07,
+        "amplitude_ratio": 0.020243996989074142,
+        "pole_hz": 159095.2898304286
+      }
+    ],
+    "assumptions": {
+      "temperature_K": 300.0,
+      "amplifier_voltage_noise_V_rt_Hz": 2e-09,
+      "amplifier_current_noise_A_rt_Hz": 2e-15,
+      "parasitic_capacitance_F": [
+        1e-13,
+        1e-12,
+        1e-11
+      ],
+      "electrode_length": "configured straight 2D approximation; no end fringing",
+      "motion_amplitude": "assumed; not thermodynamic equilibrium or a prediction",
+      "receiver": "ideal lumped Norton model, no RF drive feedthrough or fabrication data"
+    }
+  },
+  "poisson_event_interval_exact_probability": [
+    {
+      "event_rate_per_s": 0.001,
+      "bin_width_s": 1e-06,
+      "p_event": 9.999999995e-10,
+      "hmin_bits_per_bin": 1.4426950008081086e-09,
+      "iid_ceiling_bits_per_s": 0.0014426950008081087
+    },
+    {
+      "event_rate_per_s": 0.001,
+      "bin_width_s": 0.0001,
+      "p_event": 9.999999500000018e-08,
+      "hmin_bits_per_bin": 1.4426950401872457e-07,
+      "iid_ceiling_bits_per_s": 0.0014426950401872456
+    },
+    {
+      "event_rate_per_s": 0.001,
+      "bin_width_s": 0.01,
+      "p_event": 9.999950000166668e-06,
+      "hmin_bits_per_bin": 1.4426950408897902e-05,
+      "iid_ceiling_bits_per_s": 0.0014426950408897902
+    },
+    {
+      "event_rate_per_s": 1.0,
+      "bin_width_s": 1e-06,
+      "p_event": 9.999995000001665e-07,
+      "hmin_bits_per_bin": 1.4426950408660804e-06,
+      "iid_ceiling_bits_per_s": 1.4426950408660804
+    },
+    {
+      "event_rate_per_s": 1.0,
+      "bin_width_s": 0.0001,
+      "p_event": 9.99950001666625e-05,
+      "hmin_bits_per_bin": 0.0001442695040888983,
+      "iid_ceiling_bits_per_s": 1.442695040888983
+    },
+    {
+      "event_rate_per_s": 1.0,
+      "bin_width_s": 0.01,
+      "p_event": 0.009950166250831947,
+      "hmin_bits_per_bin": 0.014426950408889557,
+      "iid_ceiling_bits_per_s": 1.4426950408889556
+    },
+    {
+      "event_rate_per_s": 1000.0,
+      "bin_width_s": 1e-06,
+      "p_event": 0.0009995001666250082,
+      "hmin_bits_per_bin": 0.0014426950408889198,
+      "iid_ceiling_bits_per_s": 1442.69504088892
+    },
+    {
+      "event_rate_per_s": 1000.0,
+      "bin_width_s": 0.0001,
+      "p_event": 0.09516258196404043,
+      "hmin_bits_per_bin": 0.14426950408889644,
+      "iid_ceiling_bits_per_s": 1442.6950408889643
+    },
+    {
+      "event_rate_per_s": 1000.0,
+      "bin_width_s": 0.01,
+      "p_event": 0.9999546000702375,
+      "hmin_bits_per_bin": 6.549974037810964e-05,
+      "iid_ceiling_bits_per_s": 0.006549974037810964
+    },
+    {
+      "event_rate_per_s": 100000.0,
+      "bin_width_s": 1e-06,
+      "p_event": 0.09516258196404041,
+      "hmin_bits_per_bin": 0.14426950408889624,
+      "iid_ceiling_bits_per_s": 144269.50408889624
+    },
+    {
+      "event_rate_per_s": 100000.0,
+      "bin_width_s": 0.0001,
+      "p_event": 0.9999546000702375,
+      "hmin_bits_per_bin": 6.549974037810964e-05,
+      "iid_ceiling_bits_per_s": 0.6549974037810964
+    },
+    {
+      "event_rate_per_s": 100000.0,
+      "bin_width_s": 0.01,
+      "p_event": 1.0,
+      "hmin_bits_per_bin": -0.0,
+      "iid_ceiling_bits_per_s": -0.0
+    }
+  ],
+  "interpretation": [
+    "No conditional entropy is established by deterministic FEM or readout SNR.",
+    "ENBW, signal bandwidth, sample rate, and independent innovation rate are distinct.",
+    "The event model is an ideal IID Poisson ceiling only; event rate is not ion survival or entropy measured in this trap."
+  ],
+  "ideal_field_error_note": "Corrected M2a.1: exact element integration includes the within-triangle variance of the linear exact quadrupole gradient; prior centroid-only metric underestimated the P1 global L2 field error."
+}

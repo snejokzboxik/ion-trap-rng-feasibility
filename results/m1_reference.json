@@ -1,0 +1,73 @@
+{
+  "configuration": "configs/m1_baseline.yaml",
+  "scope": "selected analytical points only; no FEM or stochastic trajectory simulation",
+  "species": [
+    {
+      "ion": "40Ca+",
+      "rf_frequency_hz": 2471842435.8888917,
+      "q_x": -0.2,
+      "a_x_including_axial_dc": -3.2733197286747907e-07,
+      "radial_secular_x_hz_small_q_with_axial_dc": 174784224.51498774,
+      "radial_secular_y_hz_small_q_with_axial_dc": 174784224.51498774,
+      "axial_frequency_hz": 1000000.0,
+      "acceptance_energy_eV_at_eta": 0.06250000000000001,
+      "thermal_rms_axis_m_equilibrium_only": 2.2738699568209764e-07,
+      "illustrative_rf_surface_field_at_hyperbola_vertex_v_per_m": 10000000.0
+    },
+    {
+      "ion": "88Sr+",
+      "rf_frequency_hz": 1666515830.307096,
+      "q_x": -0.2,
+      "a_x_including_axial_dc": -7.20130340308454e-07,
+      "radial_secular_x_hz_small_q_with_axial_dc": 117838342.92504604,
+      "radial_secular_y_hz_small_q_with_axial_dc": 117838342.92504604,
+      "axial_frequency_hz": 1000000.0,
+      "acceptance_energy_eV_at_eta": 0.06250000000000001,
+      "thermal_rms_axis_m_equilibrium_only": 2.273892286825533e-07,
+      "illustrative_rf_surface_field_at_hyperbola_vertex_v_per_m": 10000000.0
+    },
+    {
+      "ion": "174Yb+",
+      "rf_frequency_hz": 1185157735.0629618,
+      "q_x": -0.20000000000000004,
+      "a_x_including_axial_dc": -1.4238940819735342e-06,
+      "radial_secular_x_hz_small_q_with_axial_dc": 83800323.89494595,
+      "radial_secular_y_hz_small_q_with_axial_dc": 83800323.89494595,
+      "axial_frequency_hz": 1000000.0,
+      "acceptance_energy_eV_at_eta": 0.06250000000000001,
+      "thermal_rms_axis_m_equilibrium_only": 2.273932296395637e-07,
+      "illustrative_rf_surface_field_at_hyperbola_vertex_v_per_m": 10000000.0
+    }
+  ],
+  "floquet_q_0p2": {
+    "stable": true,
+    "discriminant": 1.8027706119071691,
+    "determinant": 0.9999999999998544,
+    "beta": 0.14255132653967129,
+    "secular_hz_for_Ca40": 176182209.11650693
+  },
+  "ca40_readout_screen": {
+    "image_current_peak_a": 1.7595274561345367e-11,
+    "johnson_noise_rms_a": 4.0703547756921634e-12,
+    "assumed_bandwidth_hz": 1000.0,
+    "secular_hz": 174785654.84417093,
+    "bandwidth_to_secular_ratio": 5.721293322907671e-06,
+    "note": "Scalar weighting-distance approximation; not a solved weighting field or measured circuit."
+  },
+  "ca40_voltage_for_acceptance_margin_v": {
+    "5.0": 20.68159982914843,
+    "10.0": 41.36319965829686,
+    "20.0": 82.72639931659371
+  },
+  "lifetime_screen": {
+    "maximum_loss_rate_per_s": 2.7917599593059587e-06,
+    "maximum_pressure_pa": null,
+    "heating_energy_horizon_s": null,
+    "status": "conditional_poisson_or_energy_scale"
+  },
+  "entropy_rate_screen": {
+    "optimistic_rate_upper_bound_bits_per_s": null,
+    "status": "unknown",
+    "note": "Requires characterized conditional min-entropy and innovation/sample rate."
+  }
+}

@@ -1,0 +1,18 @@
+scope: m2b_phase1_manufactured_solution
+reference_geometry:
+  r0_normalized: 1.0
+  outer_square_half_width_over_r0: 6.0
+  exact_potential: "(x^2-y^2)/2"
+  boundary_condition: exact_analytical_dirichlet
+mesh:
+  global_cells_per_side: [30, 60, 120]
+  local_hmin_over_r0: [0.05, 0.0125, 0.003125]
+  local_far_field_hmax_over_r0: 0.4
+  quadrature_order: 6
+  local_field_radius_over_r0: 1.0
+  local_hessian_radius_over_r0: 0.5
+polynomial_orders: [1, 2]
+scope_limits:
+  no_full_3d_if_manufactured_solution_gate_fails: true
+  no_stochastic_dynamics: true
+  no_remote_compute: true

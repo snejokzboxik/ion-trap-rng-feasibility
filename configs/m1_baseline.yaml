@@ -1,0 +1,41 @@
+trap:
+  r0_m: 1.0e-6
+  v_rf_differential_peak_v: 10.0
+  q_abs: 0.2
+  u_dc_v: 0.0
+  axial_frequency_hz: 1.0e+6
+environment:
+  temperature_k: 300.0
+screening:
+  safe_radius_fraction: 0.5
+  thermal_margin_scenarios_kbt: [5.0, 10.0, 20.0]
+  readout:
+    secular_amplitude_m: 1.0e-7
+    effective_weighting_distance_m: 1.0e-6
+    input_resistance_ohm: 1.0e+6
+    bandwidth_hz: 1.0e+3
+    amplifier_current_noise_a_per_sqrt_hz: 0.0
+  entropy:
+    conditional_min_entropy_bits_per_sample: null
+    effective_independent_samples_per_second: null
+  lifetime:
+    survival_probability: 0.99
+    target_time_s: 3600.0
+    ion_loss_coefficient_m3_per_s: null
+  system_scenarios:
+    illustrative_cmos_comparison:
+      target_useful_rate_bits_per_s: 100000.0
+      total_power_w: 0.001
+    startup_example:
+      startup_energy_j: 0.001
+      restart_interval_s: 3600.0
+species:
+  - label: 40Ca+
+    isotope_mass_amu: 40.0
+    charge_state: 1
+  - label: 88Sr+
+    isotope_mass_amu: 88.0
+    charge_state: 1
+  - label: 174Yb+
+    isotope_mass_amu: 174.0
+    charge_state: 1

@@ -1,0 +1,116 @@
+{
+  "scope": "targeted P1 ideal-reference mesh comparison and finite-device enclosure sensitivity",
+  "ideal_reference": [
+    {
+      "mesh": "local",
+      "hmin_over_r0": 0.05,
+      "nodes": 2141,
+      "triangles": 4120,
+      "global_field_l2": 0.02467258410215498,
+      "field_l2_r_lt_1r0": 0.09353498983709198,
+      "field_l2_r_lt_2r0": 0.07404019082240375,
+      "center_hessian_relative": 0.007688794498095065
+    },
+    {
+      "mesh": "local",
+      "hmin_over_r0": 0.025,
+      "nodes": 2240,
+      "triangles": 4318,
+      "global_field_l2": 0.02464446523024124,
+      "field_l2_r_lt_1r0": 0.08750215035409471,
+      "field_l2_r_lt_2r0": 0.07277210380960923,
+      "center_hessian_relative": 0.004221750802777416
+    },
+    {
+      "mesh": "local",
+      "hmin_over_r0": 0.0125,
+      "nodes": 2350,
+      "triangles": 4538,
+      "global_field_l2": 0.024600614792189168,
+      "field_l2_r_lt_1r0": 0.08371791644475712,
+      "field_l2_r_lt_2r0": 0.0717870211837703,
+      "center_hessian_relative": 0.0033233133125159476
+    },
+    {
+      "mesh": "local",
+      "hmin_over_r0": 0.00625,
+      "nodes": 2475,
+      "triangles": 4788,
+      "global_field_l2": 0.02455867533195555,
+      "field_l2_r_lt_1r0": 0.08164869300113566,
+      "field_l2_r_lt_2r0": 0.07085693246267562,
+      "center_hessian_relative": 0.003386749322196065
+    },
+    {
+      "mesh": "local",
+      "hmin_over_r0": 0.003125,
+      "nodes": 2610,
+      "triangles": 5058,
+      "global_field_l2": 0.024566894524664224,
+      "field_l2_r_lt_1r0": 0.08123052716921805,
+      "field_l2_r_lt_2r0": 0.0711588215958054,
+      "center_hessian_relative": 0.0017298528870984171
+    },
+    {
+      "mesh": "global",
+      "h_over_r0": 0.4,
+      "nodes": 1124,
+      "triangles": 2126,
+      "global_field_l2": 0.033187624673817286,
+      "field_l2_r_lt_1r0": 0.2436076970381972,
+      "field_l2_r_lt_2r0": 0.116499373647303,
+      "center_hessian_relative": 0.9928619083421355
+    },
+    {
+      "mesh": "global",
+      "h_over_r0": 0.2,
+      "nodes": 4334,
+      "triangles": 8426,
+      "global_field_l2": 0.016643310267081334,
+      "field_l2_r_lt_1r0": 0.11650268505261692,
+      "field_l2_r_lt_2r0": 0.05786894866844386,
+      "center_hessian_relative": 1.936945711391964e-07
+    },
+    {
+      "mesh": "global",
+      "h_over_r0": 0.1,
+      "nodes": 16962,
+      "triangles": 33442,
+      "global_field_l2": 0.008326111177351804,
+      "field_l2_r_lt_1r0": 0.05786951699392945,
+      "field_l2_r_lt_2r0": 0.028890673975216524,
+      "center_hessian_relative": 6.214220702274826e-08
+    }
+  ],
+  "grounded_enclosure_sensitivity_at_h_over_r0_1_80": [
+    {
+      "outer_over_r0": 4.0,
+      "drive_hessian_V_per_r0_2": 10.06290425968582,
+      "center_gradient_fraction": 0.00032850279166924036,
+      "differential_weighting_gradient_per_r0": 0.3990823932735624,
+      "per_electrode_Cprime_F_per_m": 7.681010880100283e-11,
+      "differential_Cprime_F_per_m": 3.9385894445963655e-11
+    },
+    {
+      "outer_over_r0": 6.0,
+      "drive_hessian_V_per_r0_2": 10.062829270418359,
+      "center_gradient_fraction": 0.00028391987201722984,
+      "differential_weighting_gradient_per_r0": 0.3990773506534017,
+      "per_electrode_Cprime_F_per_m": 7.29850121633143e-11,
+      "differential_Cprime_F_per_m": 3.751113256063227e-11
+    },
+    {
+      "outer_over_r0": 10.0,
+      "drive_hessian_V_per_r0_2": 10.062915581593646,
+      "center_gradient_fraction": 0.0003207398899852584,
+      "differential_weighting_gradient_per_r0": 0.39908623160571083,
+      "per_electrode_Cprime_F_per_m": 7.122188855905665e-11,
+      "differential_Cprime_F_per_m": 3.6728531534214815e-11
+    }
+  ],
+  "notes": [
+    "The ideal field domain has exact quadrupole Dirichlet data on the outer square.",
+    "The finite-device runs retain the grounded enclosure; no ideal quadrupole is prescribed there.",
+    "This remains P1 with straight-sided sampled boundaries; no P2 claim is made."
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "model": "positive octant of unchanged M2b.2 geometry; vacuum only",
+  "mesh_targets_r0": {
+    "hcenter": 0.03,
+    "hmax_outer": 0.75,
+    "dc_surface": 0.075,
+    "rf_surface": 0.3,
+    "rail_end": 0.3,
+    "central_size_plateau_radius": 0.3,
+    "central_transition_end_radius": 0.55,
+    "Mesh.MeshSizeMin": 0.03
+  },
+  "cad_surface_entity_counts": {
+    "dc": 4,
+    "rf_side": 154,
+    "rail_end_point_refinement": 1
+  },
+  "vertices": 5353,
+  "tetrahedra": 17753,
+  "unique_edges": 27661,
+  "estimated_P2_dofs": 33014,
+  "edge_lengths_r0": {
+    "global": {
+      "count": 27661,
+      "min": 0.013035012912346298,
+      "median": 0.3146630267105843,
+      "p90": 0.7805092510014757,
+      "p99": 1.259121424144775,
+      "max": 1.5088237189974338
+    },
+    "region_specific_edges": {
+      "radius_lt_0.15": {
+        "both_endpoints_inside": {
+          "count": 425,
+          "min": 0.021446497415580808,
+          "median": 0.03298339578614201,
+          "p90": 0.04852005541585136,
+          "p99": 0.055171778912541464,
+          "max": 0.05952467886165861
+        },
+        "midpoint_inside_diagnostic": {
+          "count": 531,
+          "min": 0.021446497415580808,
+          "median": 0.03317931806877864,
+          "p90": 0.04839325539719113,
+          "p99": 0.055086910415460294,
+          "max": 0.05952467886165861
+        }
+      },
+      "radius_lt_0.30": {
+        "both_endpoints_inside": {
+          "count": 2767,
+          "min": 0.015838260404496925,
+          "median": 0.038324098291708436,
+          "p90": 0.051380652052577976,
+          "p99": 0.06219260840510836,
+          "max": 0.09923116623375815
+        },
+        "midpoint_inside_diagnostic": {
+          "count": 2916,
+          "min": 0.015838260404496925,
+          "median": 0.03879800784297151,
+          "p90": 0.05214355672627293,
+          "p99": 0.06788263290187904,
+          "max": 0.12340767508653838
+        }
+      }
+    },
+    "tetrahedra_by_centroid_radius": {
+      "radius_lt_0.15": {
+        "count": 2154,
+        "min": 0.021446497415580808,
+        "median": 0.03654019474796889,
+        "p90": 0.04875836766647747,
+        "p99": 0.05513347453140916,
+        "max": 0.05952467886165861
+      },
+      "radius_lt_0.30": {
+        "count": 13152,
+        "min": 0.015838260404496925,
+        "median": 0.03915890959228126,
+        "p90": 0.05188429947480281,
+        "p99": 0.06618074708867311,
+        "max": 0.16642556340452783
+      }
+    }
+  },
+  "tetra_quality_mean_ratio_0_1": {
+    "global": {
+      "count": 17753,
+      "min": 0.0006227380627165538,
+      "median": 0.4111689346576431,
+      "p90": 0.8907656771442579,
+      "p99": 0.9690299040390425,
+      "max": 0.999990464299969
+    },
+    "central_centroid_radius_lt_0p5": {
+      "count": 2574,
+      "min": 0.3268812052431315,
+      "median": 0.827634989544006,
+      "p90": 0.9393941041857393,
+      "p99": 0.9845861006614011,
+      "max": 0.999990464299969
+    }
+  },
+  "tetra_volume_r0_cubed": {
+    "count": 17753,
+    "min": 7.864068087022925e-08,
+    "median": 0.0007969005905196971,
+    "p90": 0.06546996292541636,
+    "p99": 0.1275939813773437,
+    "max": 0.2009155328364588
+  },
+  "purpose": "mesh-only; no P2 assembly or solve"
+}

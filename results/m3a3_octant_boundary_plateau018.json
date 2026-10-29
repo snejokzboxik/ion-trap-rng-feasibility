@@ -1,0 +1,60 @@
+{
+  "mesh_tag": "plateau018",
+  "vertices": 7037,
+  "tetrahedra": 26746,
+  "boundary_facets": 10008,
+  "facet_counts": {
+    "dc_plus": 879,
+    "ground": 540,
+    "rf_right": 2979,
+    "rf_top": 2979,
+    "symmetry": 2631
+  },
+  "unclassified_facets": 0,
+  "surface_mesh_statistics": {
+    "dc_plus": {
+      "triangles": 879,
+      "unique_surface_edges_r0": {
+        "count": 1346,
+        "min": 0.04518596821522794,
+        "median": 0.09798461642041384,
+        "p90": 0.12929985066674193,
+        "p99": 0.14847729545901614,
+        "max": 0.17621288823417722
+      }
+    },
+    "rf_right": {
+      "triangles": 2979,
+      "unique_surface_edges_r0": {
+        "count": 4531,
+        "min": 0.013035012912346298,
+        "median": 0.3117629715375493,
+        "p90": 0.3187252113084834,
+        "p99": 0.41914558809288055,
+        "max": 0.42148630867641884
+      }
+    },
+    "rf_top": {
+      "triangles": 2979,
+      "unique_surface_edges_r0": {
+        "count": 4531,
+        "min": 0.013035012912346298,
+        "median": 0.3117629715375493,
+        "p90": 0.3186979404817059,
+        "p99": 0.4189961563398757,
+        "max": 0.4198753500354243
+      }
+    },
+    "ground": {
+      "triangles": 540,
+      "unique_surface_edges_r0": {
+        "count": 836,
+        "min": 0.5103717552446153,
+        "median": 0.7470440951772088,
+        "p90": 0.7888084336148139,
+        "p99": 0.8712437682359953,
+        "max": 0.9130053217575498
+      }
+    }
+  }
+}

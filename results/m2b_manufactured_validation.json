@@ -1,0 +1,96 @@
+{
+  "scope": "M2b phase 1 only; exact harmonic quadrupole on square with exact Dirichlet boundary",
+  "phi": "(x^2-y^2)/2",
+  "r0_normalized": 1.0,
+  "limitations": [
+    "uniform affine triangles",
+    "no isoparametric curved surfaces",
+    "no 3D device conclusion"
+  ],
+  "results": [
+    {
+      "n_cells_per_side": 12,
+      "order": 1,
+      "dofs": 169,
+      "h_max_over_r0": 1.4142135623730951,
+      "global_potential_relative_l2": 0.006944444444444435,
+      "local_potential_relative_l2_r_lt_1": 0.229606252621505,
+      "global_field_relative_l2": 0.08333333333333331,
+      "local_field_relative_l2_r_lt_1": 0.5687396035623491,
+      "independent_p1_moment_relative_l2": 0.08333333333333336,
+      "p1_moment_vs_quadrature_abs": 4.163336342344337e-17,
+      "elementwise_hessian_relative_rms": 1.0,
+      "boundary_geometry": "straight square boundary; no curved conductor in manufactured benchmark"
+    },
+    {
+      "n_cells_per_side": 12,
+      "order": 2,
+      "dofs": 625,
+      "h_max_over_r0": 1.4142135623730951,
+      "global_potential_relative_l2": 1.695037839586442e-15,
+      "local_potential_relative_l2_r_lt_1": 3.3495741461278134e-14,
+      "global_field_relative_l2": 2.5488594062941672e-15,
+      "local_field_relative_l2_r_lt_1": 6.075132002941969e-15,
+      "independent_p1_moment_relative_l2": null,
+      "p1_moment_vs_quadrature_abs": null,
+      "elementwise_hessian_relative_rms": 1.915376495014246e-14,
+      "boundary_geometry": "straight square boundary; no curved conductor in manufactured benchmark"
+    },
+    {
+      "n_cells_per_side": 24,
+      "order": 1,
+      "dofs": 625,
+      "h_max_over_r0": 0.7071067811865476,
+      "global_potential_relative_l2": 0.0017361111111111208,
+      "local_potential_relative_l2_r_lt_1": 0.06447438126452217,
+      "global_field_relative_l2": 0.04166666666666665,
+      "local_field_relative_l2_r_lt_1": 0.28548860594533126,
+      "independent_p1_moment_relative_l2": 0.04166666666666666,
+      "p1_moment_vs_quadrature_abs": 6.938893903907228e-18,
+      "elementwise_hessian_relative_rms": 1.0,
+      "boundary_geometry": "straight square boundary; no curved conductor in manufactured benchmark"
+    },
+    {
+      "n_cells_per_side": 24,
+      "order": 2,
+      "dofs": 2401,
+      "h_max_over_r0": 0.7071067811865476,
+      "global_potential_relative_l2": 6.092729896429959e-15,
+      "local_potential_relative_l2_r_lt_1": 2.6478841576929736e-14,
+      "global_field_relative_l2": 8.861141530469643e-15,
+      "local_field_relative_l2_r_lt_1": 2.2778482948818604e-14,
+      "independent_p1_moment_relative_l2": null,
+      "p1_moment_vs_quadrature_abs": null,
+      "elementwise_hessian_relative_rms": 8.125000916137933e-14,
+      "boundary_geometry": "straight square boundary; no curved conductor in manufactured benchmark"
+    },
+    {
+      "n_cells_per_side": 48,
+      "order": 1,
+      "dofs": 2401,
+      "h_max_over_r0": 0.3535533905932738,
+      "global_potential_relative_l2": 0.00043402777777777613,
+      "local_potential_relative_l2_r_lt_1": 0.016276064316153614,
+      "global_field_relative_l2": 0.020833333333333322,
+      "local_field_relative_l2_r_lt_1": 0.14341185335390264,
+      "independent_p1_moment_relative_l2": 0.020833333333333346,
+      "p1_moment_vs_quadrature_abs": 2.42861286636753e-17,
+      "elementwise_hessian_relative_rms": 1.0,
+      "boundary_geometry": "straight square boundary; no curved conductor in manufactured benchmark"
+    },
+    {
+      "n_cells_per_side": 48,
+      "order": 2,
+      "dofs": 9409,
+      "h_max_over_r0": 0.3535533905932738,
+      "global_potential_relative_l2": 2.0776965108100016e-14,
+      "local_potential_relative_l2_r_lt_1": 2.17190438662938e-13,
+      "global_field_relative_l2": 2.9049153558004725e-14,
+      "local_field_relative_l2_r_lt_1": 6.93963390672137e-14,
+      "independent_p1_moment_relative_l2": null,
+      "p1_moment_vs_quadrature_abs": null,
+      "elementwise_hessian_relative_rms": 3.297267834476774e-13,
+      "boundary_geometry": "straight square boundary; no curved conductor in manufactured benchmark"
+    }
+  ]
+}

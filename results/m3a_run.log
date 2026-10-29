@@ -1,0 +1,260 @@
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+{
+  "stage": "M3a",
+  "model": "deterministic single 40Ca+; saved M2b.2 P2 fields; ideal PEC vacuum; no stochastic forces",
+  "field_identity": {
+    "field_npz": "results/m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz",
+    "field_json": "results/m2b2_p2_effective_h0.75_hc0.18_dc0.075.json",
+    "geometry": "M2b ideal-conductor hyperbolic branches + annular endcaps; vacuum; polygonal surfaces; analyst-selected supports omitted",
+    "mesh": {
+      "hmax_r0": 0.75,
+      "hcenter_r0": 0.18,
+      "vertices": 33526,
+      "tetrahedra": 120509,
+      "P2_dofs": 215157,
+      "fixed_dofs": 110414,
+      "missing_boundary_dofs": 0,
+      "terminal_boundary_dof_counts": {
+        "ground": 8206,
+        "right": 22938,
+        "left": 22938,
+        "top": 22938,
+        "bottom": 22938,
+        "dc_plus": 5228,
+        "dc_minus": 5228
+      },
+      "terminal_tag_overlaps": [],
+      "mesh_source": "results/m2b2_effective_mesh_probe_h0p075.npz",
+      "dc_surface_h_r0": 0.075,
+      "rf_surface_h_r0": 0.3,
+      "axial_end_h_r0": 0.3
+    },
+    "normalization": {
+      "rf_basis": "1 V differential between opposite RF electrode pairs",
+      "dc_basis": "1 V on each DC ring",
+      "potential_coordinate": "r/r0",
+      "physical_gradient": "(1/r0)*dPhi/d(r/r0)"
+    }
+  },
+  "physical_parameters": {
+    "r0_m": 1e-06,
+    "mass_kg": 6.635944361755999e-26,
+    "charge_C": 1.602176634e-19,
+    "Vrf_differential_peak_V": 10.0,
+    "target_q_abs": 0.2,
+    "rf_coefficient_Hxx_per_V": 0.9998641069136932,
+    "omega_rad_s": 15537255876.673868,
+    "f_rf_Hz": 2472831074.856246,
+    "q_effective": 0.2,
+    "dc_curvature_Hzz_per_V_V_m2": 187991635.14019543,
+    "Vdc_each_ring_V": 0.08697882845042744,
+    "target_fz_Hz": 1000000.0,
+    "gamma_dimensionless": 0.040005436462229906
+  },
+  "local_modes": {
+    "Hrf_normalized_symmetric": [
+      [
+        0.9998641069136932,
+        7.805195797461195e-06,
+        2.838301241770319e-06
+      ],
+      [
+        7.805195797461195e-06,
+        -0.9998620389037489,
+        1.3955466619477759e-06
+      ],
+      [
+        2.838301241770319e-06,
+        1.3955466619477759e-06,
+        -5.97099665041402e-06
+      ]
+    ],
+    "Hdc_per_V_normalized_symmetric": [
+      [
+        -9.381569011096032e-05,
+        1.1434838892312413e-07,
+        -2.806821326884223e-07
+      ],
+      [
+        1.1434838892312413e-07,
+        -9.401474363529832e-05,
+        8.074446416419863e-07
+      ],
+      [
+        -2.806821326884223e-07,
+        8.074446416419863e-07,
+        0.00018799163514019544
+      ]
+    ],
+    "Hrf_antisymmetric_norm": 2.707116686446198e-06,
+    "Hdc_antisymmetric_norm": 0.0024655221656581386,
+    "rf_null_estimate_xi": [
+      1.6816150315264563e-06,
+      -5.45982877182937e-07,
+      0.048120093806633124
+    ],
+    "pseudopotential_equilibrium_xi": [
+      1.8410546501613647e-06,
+      -6.261445673771287e-07,
+      -0.0017903496534116417
+    ],
+    "excess_micromotion_peak_estimate_m": 1.9446180201100362e-13,
+    "monodromy_multipliers_real_imag": [
+      [
+        0.9013868961024532,
+        0.4330146227722791
+      ],
+      [
+        0.9013868961024532,
+        -0.4330146227722791
+      ],
+      [
+        0.9013873070865298,
+        0.43301376724429863
+      ],
+      [
+        0.9013873070865298,
+        -0.43301376724429863
+      ],
+      [
+        0.9999967719437772,
+        0.0025408860709312435
+      ],
+      [
+        0.9999967719437772,
+        -0.0025408860709312435
+      ]
+    ],
+    "finite_field_floquet_frequencies_Hz": [
+      1000000.5225164916,
+      176250856.81654155,
+      176251230.21403384
+    ],
+    "ideal_a0_mathieu_q02_frequency_Hz": 176252675.01487052,
+    "small_q_approx_radial_frequency_Hz": 174855562.17596707
+  },
+  "pseudopotential_local": {
+    "sphere_radius_r0": 0.2,
+    "min_delta_U_J_vs_center": 5.206153770710904e-26,
+    "min_delta_U_eV": 3.249425600293022e-07,
+    "escape_direction": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "interpretation": "safe-radius local acceptance energy only; not the actual finite-geometry escape barrier or trap depth"
+  },
+  "integrator_comparison": [
+    {
+      "case": "near_center",
+      "phase_rad": 0.0,
+      "method": "RK4",
+      "steps_per_rf_period": 40,
+      "final_position_error_r0_vs_DOP853": 1.5371484161289798e-07
+    },
+    {
+      "case": "near_center",
+      "phase_rad": 0.0,
+      "method": "RK4",
+      "steps_per_rf_period": 80,
+      "final_position_error_r0_vs_DOP853": 7.768370021549189e-09
+    },
+    {
+      "case": "near_center",
+      "phase_rad": 0.0,
+      "method": "DOP853",
+      "steps_per_rf_period": 80,
+      "final_position_error_r0_vs_DOP853": 0.0
+    },
+    {
+      "case": "near_center",
+      "phase_rad": 0.0,
+      "method": "RK4",
+      "steps_per_rf_period": 160,
+      "final_position_error_r0_vs_DOP853": 9.556595841513508e-09
+    },
+    {
+      "case": "moderate_radial",
+      "phase_rad": 0.0,
+      "method": "RK4",
+      "steps_per_rf_period": 80,
+      "final_position_error_r0_vs_DOP853": 3.900593498802496e-08
+    },
+    {
+      "case": "moderate_radial",
+      "phase_rad": 0.0,
+      "method": "DOP853",
+      "steps_per_rf_period": 80,
+      "final_position_error_r0_vs_DOP853": 0.0
+    },
+    {
+      "case": "axial",
+      "phase_rad": 0.0,
+      "method": "RK4",
+      "steps_per_rf_period": 80,
+      "final_position_error_r0_vs_DOP853": 7.622418566968774e-13
+    },
+    {
+      "case": "axial",
+      "phase_rad": 0.0,
+      "method": "DOP853",
+      "steps_per_rf_period": 80,
+      "final_position_error_r0_vs_DOP853": 0.0
+    },
+    {
+      "case": "combined",
+      "phase_rad": 0.0,
+      "method": "RK4",
+      "steps_per_rf_period": 80,
+      "final_position_error_r0_vs_DOP853": 7.564955087686046e-08
+    },
+    {
+      "case": "combined",
+      "phase_rad": 0.0,
+      "method": "DOP853",
+      "steps_per_rf_period": 80,
+      "final_position_error_r0_vs_DOP853": 0.0
+    }
+  ],
+  "micromotion_estimates": [
+    {
+      "case": "near_center",
+      "phase_rad": 0.0,
+      "rms_within_rf_period_r0_median": 0.0019733499647616817,
+      "rms_within_rf_period_r0_max": 0.002616045511639172,
+      "interpretation": "includes secular drift over the 20 samples/RF period; indicative micromotion scale, not a spectral separation"
+    },
+    {
+      "case": "moderate_radial",
+      "phase_rad": 0.0,
+      "rms_within_rf_period_r0_median": 0.007893686947020924,
+      "rms_within_rf_period_r0_max": 0.010464773822074936,
+      "interpretation": "includes secular drift over the 20 samples/RF period; indicative micromotion scale, not a spectral separation"
+    },
+    {
+      "case": "axial",
+      "phase_rad": 0.0,
+      "rms_within_rf_period_r0_median": 1.971566035947089e-06,
+      "rms_within_rf_period_r0_max": 3.823137159198207e-06,
+      "interpretation": "includes secular drift over the 20 samples/RF period; indicative micromotion scale, not a spectral separation"
+    },
+    {
+      "case": "combined",
+      "phase_rad": 0.0,
+      "rms_within_rf_period_r0_median": 0.0062800012632511296,
+      "rms_within_rf_period_r0_max": 0.0082435919301978,
+      "interpretation": "includes secular drift over the 20 samples/RF period; indicative micromotion scale, not a spectral separation"
+    }
+  ],
+  "limitations": [
+    "selected trajectories stop at radius 0.30r0 and duration 20 RF periods; axial 1 MHz motion is not directly period-resolved",
+    "P2 gradients are elementwise discontinuous; mesh-to-mesh pointwise DC-gradient differences are significant relative to the weak DC field near center",
+    "only DC surface size varied among the field meshes; center h=0.18r0 remains fixed",
+    "electrode escape barriers, end fringing, curved boundaries, material interfaces and RF circuit are not validated",
+    "linear Floquet stability does not prove nonlinear long-term confinement"
+  ]
+}
+Trajectory records: 14 integrator comparisons: 10

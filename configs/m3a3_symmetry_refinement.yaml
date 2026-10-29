@@ -1,0 +1,49 @@
+stage: M3a3
+purpose: symmetry-reduced 3D electrostatic FEM and controlled DC force convergence
+geometry:
+  source_reference: M2b.2/M3a.2 four-hyperbola ideal-conductor vacuum geometry
+  r0_m: 1.0e-6
+  rf_electrode_profile: truncated hyperbolic branches, x^2-y^2=+/-r0^2 reference
+  rf_rail_length_over_r0: 10.0
+  dc_ring_centers_over_r0: [-5.5, 5.5]
+  dc_ring_thickness_over_r0: 0.2
+  dc_ring_inner_outer_radius_over_r0: [0.5, 1.5]
+  grounded_box_half_extents_over_r0: [6.0, 6.0, 7.0]
+  ion_volume: empty vacuum
+  conductor_model: ideal equipotential conductor
+  dielectric_stack: omitted, unchanged from reference
+symmetry:
+  domain: x>=0, y>=0, z>=0
+  paired_rf_values_per_volt_differential: {right: 0.5, left: 0.5, top: -0.5, bottom: -0.5}
+  dc_values_per_volt_per_ring: {dc_plus: 1.0, dc_minus: 1.0}
+  open_symmetry_plane_condition: homogeneous Neumann
+  conductor_cut_faces: Dirichlet at corresponding terminal value
+  outer_enclosure: grounded Dirichlet
+  individual_weighting_fields_reused: false
+drive:
+  rf_differential_peak_V: 10.0
+  dc_each_ring_V: 0.08697882845042744
+  rf_basis: 1 V differential peak
+  dc_basis: 1 V on each ring
+mesh:
+  engine: Gmsh 4.15.2
+  element_order: P2 tetrahedra
+  hcenter_targets_over_r0: [0.030, 0.018, 0.014]
+  hcenter_solved: [0.030, 0.018]
+  dc_surface_target_over_r0: 0.075
+  rf_surface_target_over_r0: 0.30
+  rail_end_target_over_r0: 0.30
+  outer_hmax_over_r0: 0.75
+  central_plateau_radius_over_r0: 0.30
+  transition_end_radius_over_r0: 0.55
+solver:
+  library: scikit-fem 12.0.2
+  linear_solver: SciPy SuperLU sparse direct
+  equation: vacuum Laplace equation
+  unknown_material_properties: none introduced
+scope:
+  allowed: mesh-only generation, two bounded octant P2 solves, local field postprocessing
+  trajectories: false
+  stochastic_or_entropy_models: false
+  remote_computation: false
+  note: hcenter=0.014 mesh is retained mesh-only because available RAM was about 1.28 GiB.

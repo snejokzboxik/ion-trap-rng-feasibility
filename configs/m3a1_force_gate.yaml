@@ -1,0 +1,28 @@
+stage: M3a.1
+purpose: fixed-voltage DC-force audit before extended deterministic trajectories
+geometry_and_fields:
+  inherited_from: M2b.2 ideal-conductor empty-vacuum four-hyperbola 3D reference
+  dc_mesh_files:
+    h015: results/m2b2_dc_surface_refined_p2_fields_h0p15.npz
+    h010: results/m2b2_dc_surface_refined_p2_fields_effective_h0p1.npz
+    h0075: results/m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz
+  center_mesh_ratio_r0: 0.18
+  rf_surface_mesh_ratio_r0: 0.30
+  axial_end_mesh_ratio_r0: 0.30
+drive:
+  ion: 40Ca+
+  r0_m: 1.0e-6
+  rf_differential_peak_V: 10.0
+  dc_voltage_each_ring_V: 0.08697882845042744
+  dc_voltage_policy: hold identical for every mesh; do not recalibrate per mesh
+audit:
+  axes_displacements_r0: [-0.30, -0.20, -0.10, -0.05, 0.05, 0.10, 0.20, 0.30]
+  off_axis_points_r0: [[0.10,0.10,0], [0.10,0,0.10], [0,0.10,0.10], [0.08,-0.06,0.10]]
+  local_potential_fit_radius_r0: 0.50
+  polynomial_orders: [2,3,4]
+  intended_region_radius_r0: 0.30
+extended_dynamics:
+  authorization_state: blocked_pending_force_validation
+  stochastic_forces: false
+  long_trajectory_simulation: false
+  remote_compute: false

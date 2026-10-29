@@ -1,0 +1,19 @@
+{
+  "stage": "M2b.1",
+  "preservation": "All M2b source results remain unchanged; this index distinguishes superseded postprocessing artifacts from the current corrected outputs.",
+  "current": {
+    "manufactured_3d": "m2b1_manufactured3d.json",
+    "old_p1_mesh_diagnostics": "m2b1_old_grid_diagnostics.json",
+    "p2_coarse_corrected_postprocessing": "m2b1_p2_h0.9_hc0.25_v2.json",
+    "p2_medium_corrected_postprocessing": "m2b1_p2_h0.75_hc0.18_v2.json"
+  },
+  "historical_preserved_superseded": {
+    "m2b1_p2_physical_check.json": "Initial coarse P2 output. Its gradient_at_center field stored the linear gradient-fit coefficients instead of the gradient intercept; use the corrected v2 output for that observable.",
+    "m2b1_p2_h0.75_hc0.18.json": "Initial medium P2 output with the same gradient_at_center labeling error; use the corrected v2 output.",
+    "m2b_3d_preflight.json": "Original M2b P1 physical-preflight output; retained as the failed-convergence baseline, not a validated model."
+  },
+  "not_completed": [
+    "P2 finite-device potential-value fit cross-check did not finish within the bounded local execution window.",
+    "Independent central/surface/end refinement, P2 Gaussian flux convergence, elementwise strong-form Laplacian, and converged higher multipoles were not completed."
+  ]
+}

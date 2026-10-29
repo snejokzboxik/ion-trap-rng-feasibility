@@ -1,0 +1,129 @@
+{
+  "scope": "analytical sensitivity only; not experimental performance; no seeded trajectory data used",
+  "reference": {
+    "ion": "40Ca+",
+    "r0_m": 1e-06,
+    "Vdiff_peak_V": 10.0,
+    "q": 0.2,
+    "T_K": 300.0,
+    "f_rf_Hz": 2471842435.8888917,
+    "f_sec_small_q_Hz": 174785654.84417093,
+    "acceptance_eta": 0.5,
+    "D_eta_J": 1.0013603962500001e-20,
+    "D_eta_eV": 0.06250000000000001
+  },
+  "readout_sensitivity_assumptions": {
+    "amplitude_m": [
+      1e-08,
+      5e-07
+    ],
+    "effective_weighting_distance_m": [
+      5e-07,
+      5e-06
+    ],
+    "input_resistance_ohm": [
+      10000.0,
+      1000000.0
+    ],
+    "ENBW_hz": [
+      1000.0,
+      1000000.0
+    ],
+    "ideal_image_current_peak_A": [
+      3.519054912269073e-13,
+      1.7595274561345366e-10
+    ],
+    "resistor_noise_rms_A": [
+      4.0703547756921634e-12,
+      1.2871591976131001e-09
+    ],
+    "extreme_ratio_signal_to_white_noise": [
+      0.00027339702181321365,
+      43.22786472182462
+    ],
+    "nominal_config": {
+      "signal_peak_A": 1.7595274561345367e-11,
+      "johnson_rms_A": 4.0703547756921634e-12,
+      "ratio": 4.322786472182463,
+      "carrier_Hz": 174785654.84417093,
+      "ENBW_Hz": 1000.0
+    },
+    "omitted": [
+      "weighting field",
+      "paired-electrode cancellation",
+      "input capacitance",
+      "RF feedthrough",
+      "amplifier noise",
+      "resonant matching",
+      "ADC quantization and side information"
+    ]
+  },
+  "gas_collision_sensitivity": {
+    "assumed_k_m3_s": [
+      3e-16,
+      3e-15
+    ],
+    "pressure_Pa": 1e-08,
+    "event_rate_per_s": [
+      0.0007242970516039921,
+      0.00724297051603992
+    ],
+    "ideal_sparse_poisson_event_indicator_Hmin_rate_bit_s": [
+      0.001044939764479577,
+      0.010449397644795768
+    ],
+    "pressure_for_100kbit_s_event_indicator_ceiling_Pa": [
+      0.09569929616929079,
+      0.9569929616929079
+    ],
+    "minimum_ENBW_for_100kbit_s_binary_indicator_hz": 50000.0,
+    "maximum_binary_indicator_rate_at_config_ENBW_bit_s": 2000.0,
+    "nominal_johnson_noise_rms_at_minimum_target_ENBW_A": 2.878175463726977e-11,
+    "nominal_image_current_over_johnson_noise_at_minimum_target_ENBW": 0.6113343256203385,
+    "event_rate_at_optimal_binary_entropy_for_config_ENBW_per_s": 1386.2943611198905,
+    "pressure_at_optimum_for_config_ENBW_Pa": [
+      0.001913985923385816,
+      0.01913985923385816
+    ],
+    "loss_probability_per_event_max_for_99pct_survival_1h_at_target_rate": 4.027658248643081e-11,
+    "not_included": "species-specific cross sections, energy transfer, RF-phase heating, charge exchange, detection efficiency, cooling"
+  },
+  "field_noise_sensitivity": {
+    "one_sided_SE_V2_m2_Hz": [
+      1e-15,
+      1e-06
+    ],
+    "phonon_heating_per_s": [
+      0.0008342378521274476,
+      834237.8521274476
+    ],
+    "motional_power_W": [
+      9.661659030571258e-29,
+      9.661659030571259e-20
+    ],
+    "no_cooling_acceptance_energy_horizon_s": [
+      103642696.6716081,
+      0.1036426966716081
+    ],
+    "literature_transferability": "not established for micron Si/oxide at this secular frequency"
+  },
+  "system_energy_scenarios_J_per_useful_bit": {
+    "10000.0": {
+      "0.0001": 1e-08,
+      "0.001": 1e-07,
+      "0.01": 1e-06
+    },
+    "100000.0": {
+      "0.0001": 1e-09,
+      "0.001": 1e-08,
+      "0.01": 1e-07
+    },
+    "1000000.0": {
+      "0.0001": 1e-10,
+      "0.001": 1e-09,
+      "0.01": 1e-08
+    }
+  },
+  "startup_example_average_power_W": 2.7777777777777776e-07,
+  "entropy_conclusion": "No conditional min-entropy rate established; all rates above are model ceilings or sensitivities."
+}

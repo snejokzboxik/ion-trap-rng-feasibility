@@ -1,0 +1,76 @@
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+{
+  "method": "fixed RK4, 80 steps per RF period, 20 periods or stop at radius 0.30r0",
+  "drive": {
+    "Vrf_differential_peak_V": 10.0,
+    "q_target": 0.2,
+    "Vdc_per_ring_V": 0.08697882845042744,
+    "f_rf_Hz": 2472831074.856246
+  },
+  "results": {
+    "h010_near_center": {
+      "mesh": "h010",
+      "field": "m2b2_dc_surface_refined_p2_fields_effective_h0p1.npz",
+      "case": "near_center",
+      "rf_phase_rad": 0.0,
+      "completed_rf_periods": 19.999999999999435,
+      "final_xi": [
+        -0.01785162465347617,
+        -1.7303775560035765e-06,
+        1.4025067991390317e-06
+      ],
+      "max_radius_r0": 0.02000391478004068
+    },
+    "h010_combined": {
+      "mesh": "h010",
+      "field": "m2b2_dc_surface_refined_p2_fields_effective_h0p1.npz",
+      "case": "combined",
+      "rf_phase_rad": 0.0,
+      "completed_rf_periods": 19.999999999999435,
+      "final_xi": [
+        -0.044624840526299996,
+        -0.035694440619391615,
+        0.07989200555882703
+      ],
+      "max_radius_r0": 0.10246950765959599
+    },
+    "h0075_near_center": {
+      "mesh": "h0075",
+      "field": "m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz",
+      "case": "near_center",
+      "rf_phase_rad": 0.0,
+      "completed_rf_periods": 19.999999999999435,
+      "final_xi": [
+        -0.017844625424071132,
+        -6.376222962190296e-07,
+        1.0261344441986451e-06
+      ],
+      "max_radius_r0": 0.02
+    },
+    "h0075_combined": {
+      "mesh": "h0075",
+      "field": "m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz",
+      "case": "combined",
+      "rf_phase_rad": 0.0,
+      "completed_rf_periods": 19.999999999999435,
+      "final_xi": [
+        -0.044612354046022665,
+        -0.035700778270754754,
+        0.07989149171319027
+      ],
+      "max_radius_r0": 0.10246950765959599
+    }
+  },
+  "limitations": [
+    "DC-ring surface h is the only mesh refinement; center h is fixed",
+    "short observation (20 RF periods); not axial-cycle or lifetime evidence",
+    "P2 gradient is elementwise discontinuous; comparison estimates discretization sensitivity only"
+  ]
+}

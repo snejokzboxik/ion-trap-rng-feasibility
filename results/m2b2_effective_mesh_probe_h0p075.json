@@ -1,0 +1,73 @@
+{
+  "mesh_parameters": {
+    "hmax_r0": 0.75,
+    "hcenter_r0": 0.18,
+    "dc_surface_h_r0": 0.075,
+    "rf_surface_h_r0": 0.3,
+    "axial_end_h_r0": 0.3
+  },
+  "geometry_metadata": {
+    "dc_surface_h_r0": 0.075,
+    "dc_surface_entity_count": 8,
+    "dc_surface_entities": [
+      743,
+      744,
+      745,
+      746,
+      747,
+      748,
+      749,
+      750
+    ],
+    "rf_surface_h_r0": 0.3,
+    "rf_surface_entity_count": 736,
+    "axial_end_h_r0": 0.3,
+    "mesh_size_min_effective_r0": 0.075,
+    "mesh_size_max_r0": 0.75
+  },
+  "vertices": 33526,
+  "tetrahedra": 120509,
+  "unique_edges": 181631,
+  "estimated_P2_dofs": 215157,
+  "local_edge_lengths_r0": {
+    "DC_surface_adjacent": {
+      "count": 9301,
+      "min": 0.04683133348176654,
+      "median": 0.12332444409465249,
+      "p90": 0.19401089414788,
+      "p99": 0.27312392826624965,
+      "max": 0.4925577972832797
+    },
+    "global": {
+      "count": 181631,
+      "min": 0.013035012912346298,
+      "median": 0.343164186401105,
+      "p90": 0.8351540524105242,
+      "p99": 1.2821499163829624,
+      "max": 1.5679182461346823
+    }
+  },
+  "DC_surface_triangle_edge_lengths_r0": {
+    "count": 7842,
+    "min": 0.04683133348176654,
+    "median": 0.11251796432418272,
+    "p90": 0.15077302909114515,
+    "p99": 0.20464215523689835,
+    "max": 0.3027633285560815
+  },
+  "DC_surface_triangle_areas_r0_squared": {
+    "count": 5228,
+    "min": 0.0011846392754367632,
+    "median": 0.005249142789771735,
+    "p90": 0.009375344227851043,
+    "p99": 0.016180650608611683,
+    "max": 0.029048332009821286
+  },
+  "DC_boundary_triangle_count": 5228,
+  "purpose": "bounded mesh-size probe; no matrix assembly or electrostatic solve",
+  "limitations": [
+    "still polygonal/linear tetrahedral geometry",
+    "ideal conductors in vacuum",
+    "local DC/RF surface and axial-end fields; far field remains coarse"
+  ]
+}

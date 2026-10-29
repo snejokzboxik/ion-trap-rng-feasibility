@@ -1,0 +1,49 @@
+stage: M2b
+status: idealized_electrostatic_preflight_only
+physical_reference:
+  ion: Ca+
+  r0_m: 1.0e-6
+  vacuum_cavity: true
+geometry_normalized_to_r0:
+  RF_electrodes:
+    branches: [right, left, top, bottom]
+    profile: "x^2-y^2 = +/- r0^2"
+    branch_extent_r0: 1.5
+    backing_thickness_r0: 0.10 # analyst-selected; not a foundry spec
+    length_r0: 10.0
+    independent_terminals: true
+  axial_DC:
+    type: annular_endcap_rings
+    z_centers_r0: [-5.5, 5.5]
+    axial_thickness_r0: 0.20
+    inner_radius_r0: 0.50
+    outer_radius_r0: 1.50
+  outer_ground:
+    box_r0: [[-6, 6], [-6, 6], [-7, 7]]
+materials_and_interfaces:
+  vacuum_only_domain: true
+  conductors: "silicon electrode volumes treated as ideal equipotentials"
+  dielectric_stack: absent
+  substrate_supports: absent
+  reason: "No source-grounded four-branch hyperbolic Si trap stack was identified; do not infer CMOS integration."
+fem:
+  solver: "Gmsh 4.15.2 + scikit-fem 12.0.2; P1 tetrahedra"
+  levels:
+    - {hmax_r0: 0.90, hcenter_r0: 0.25}
+    - {hmax_r0: 0.75, hcenter_r0: 0.18}
+    - {hmax_r0: 0.65, hcenter_r0: 0.13}
+  center_refinement_radius_r0: 1.5
+  electrode_surface_distance_refinement: false # attempted local run exceeded bounded runtime; must be resumed before a converged 3D geometry claim
+  curve_representation: "80-point polygonal profile, linear tetrahedra"
+  quadrature_order: 4
+outputs:
+  - results/m2b_3d_preflight.json
+  - results/m2b_3d_fields.npz
+  - results/figures/m2b_3d_geometry.png
+  - results/figures/m2b_3d_potential_slices.png
+limits:
+  no_material_loss_or_thermal_model: true
+  no_dielectric_field_distortion: true
+  no_electromagnetic_modes_or_RF_feedthrough: true
+  no_ion_dynamics_or_entropy_claim: true
+  no_sub_100nm_continuum_extrapolation: true

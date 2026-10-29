@@ -1,0 +1,375 @@
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+Transforming over 1000 vertices to C_CONTIGUOUS.
+Transforming over 1000 elements to C_CONTIGUOUS.
+{
+  "fixed_vdc": 0.08697882845042744,
+  "fits": {
+    "h015": {
+      "unconstrained": {
+        "samples": 89,
+        "rank": 10,
+        "condition": 7.757881080901156,
+        "residual": 0.008210629170730467,
+        "trace": -1.5741388125588415e-06
+      },
+      "harmonic": {
+        "samples": 89,
+        "rank": 9,
+        "condition": 8.642106569088904,
+        "residual": 0.008220087153827438,
+        "trace": 0.0
+      }
+    },
+    "h010": {
+      "unconstrained": {
+        "samples": 91,
+        "rank": 10,
+        "condition": 7.124818655975696,
+        "residual": 0.007485113776690317,
+        "trace": 3.581327792399132e-07
+      },
+      "harmonic": {
+        "samples": 91,
+        "rank": 9,
+        "condition": 8.320925704753387,
+        "residual": 0.007485717916808786,
+        "trace": 0.0
+      }
+    },
+    "h0075": {
+      "unconstrained": {
+        "samples": 95,
+        "rank": 10,
+        "condition": 7.546244595046948,
+        "residual": 0.007761263320420646,
+        "trace": 1.3578537103273462e-06
+      },
+      "harmonic": {
+        "samples": 95,
+        "rank": 9,
+        "condition": 8.436382025120805,
+        "residual": 0.007768947468500656,
+        "trace": 0.0
+      }
+    }
+  },
+  "points": [
+    {
+      "point": "axis_x_-0.30",
+      "r": 0.3,
+      "force_h075_N": [
+        -3.900367980683324e-19,
+        -9.012878597408328e-21,
+        3.6572633995607224e-21
+      ],
+      "mesh_delta_over_force": 0.026869056217342376,
+      "fit_delta_over_force": 0.031056319624973818
+    },
+    {
+      "point": "axis_x_-0.20",
+      "r": 0.2,
+      "force_h075_N": [
+        -2.6064729917345683e-19,
+        -6.462840493034515e-21,
+        -5.8254609631282135e-21
+      ],
+      "mesh_delta_over_force": 0.07981116869746627,
+      "fit_delta_over_force": 0.014700220809871434
+    },
+    {
+      "point": "axis_x_-0.10",
+      "r": 0.1,
+      "force_h075_N": [
+        -1.307550454863806e-19,
+        -1.962977068398461e-21,
+        -9.048463909628412e-21
+      ],
+      "mesh_delta_over_force": 0.08971474937197622,
+      "fit_delta_over_force": 0.03577574752658362
+    },
+    {
+      "point": "axis_x_-0.05",
+      "r": 0.05,
+      "force_h075_N": [
+        -6.796303772098197e-20,
+        -1.872009173310478e-21,
+        -7.99877770535845e-21
+      ],
+      "mesh_delta_over_force": 0.1489323959807593,
+      "fit_delta_over_force": 0.05881599217121746
+    },
+    {
+      "point": "axis_x_+0.05",
+      "r": 0.05,
+      "force_h075_N": [
+        6.285963424526463e-20,
+        3.0212848933642343e-22,
+        -5.649912285608049e-21
+      ],
+      "mesh_delta_over_force": 0.13801616361680336,
+      "fit_delta_over_force": 0.06657172206045252
+    },
+    {
+      "point": "axis_x_+0.10",
+      "r": 0.1,
+      "force_h075_N": [
+        1.338594216698028e-19,
+        3.3575205580241713e-21,
+        -4.205676231309367e-21
+      ],
+      "mesh_delta_over_force": 0.04408545302389072,
+      "fit_delta_over_force": 0.0726777550285704
+    },
+    {
+      "point": "axis_x_+0.20",
+      "r": 0.2,
+      "force_h075_N": [
+        2.583590278660246e-19,
+        1.442675850727745e-20,
+        -7.985465024035704e-21
+      ],
+      "mesh_delta_over_force": 0.03696335558033076,
+      "fit_delta_over_force": 0.07251138419082984
+    },
+    {
+      "point": "axis_x_+0.30",
+      "r": 0.3,
+      "force_h075_N": [
+        3.590138910749731e-19,
+        2.874596846522097e-20,
+        1.8002944261145357e-20
+      ],
+      "mesh_delta_over_force": 0.09125279705448165,
+      "fit_delta_over_force": 0.12597070408503913
+    },
+    {
+      "point": "axis_y_-0.30",
+      "r": 0.3,
+      "force_h075_N": [
+        -4.7621654893731205e-21,
+        -3.849139184085804e-19,
+        -3.781964563148753e-21
+      ],
+      "mesh_delta_over_force": 0.01386812702797183,
+      "fit_delta_over_force": 0.032450221730938936
+    },
+    {
+      "point": "axis_y_-0.20",
+      "r": 0.2,
+      "force_h075_N": [
+        -2.743427740272418e-21,
+        -2.524871729684352e-19,
+        -9.855467260208545e-21
+      ],
+      "mesh_delta_over_force": 0.045321522579990496,
+      "fit_delta_over_force": 0.06167086154071864
+    },
+    {
+      "point": "axis_y_-0.10",
+      "r": 0.1,
+      "force_h075_N": [
+        -5.3529657457598884e-21,
+        -1.3043599365191777e-19,
+        -6.750286499100223e-21
+      ],
+      "mesh_delta_over_force": 0.0628642249970745,
+      "fit_delta_over_force": 0.04878263046478299
+    },
+    {
+      "point": "axis_y_-0.05",
+      "r": 0.05,
+      "force_h075_N": [
+        -5.261997850672283e-21,
+        -6.61085174650706e-20,
+        -6.849689000093457e-21
+      ],
+      "mesh_delta_over_force": 0.16069664559847638,
+      "fit_delta_over_force": 0.07866103432775678
+    },
+    {
+      "point": "axis_y_+0.05",
+      "r": 0.05,
+      "force_h075_N": [
+        -5.08476111058659e-21,
+        6.261434903365341e-20,
+        -7.050339789843619e-21
+      ],
+      "mesh_delta_over_force": 0.1403732059421609,
+      "fit_delta_over_force": 0.0567608469765616
+    },
+    {
+      "point": "axis_y_+0.10",
+      "r": 0.1,
+      "force_h075_N": [
+        -2.0293690418978033e-21,
+        1.2798196164665636e-19,
+        -7.006531239782915e-21
+      ],
+      "mesh_delta_over_force": 0.04874030961007035,
+      "fit_delta_over_force": 0.017013687910094905
+    },
+    {
+      "point": "axis_y_+0.20",
+      "r": 0.2,
+      "force_h075_N": [
+        2.0395549322001117e-21,
+        2.61070667701789e-19,
+        -2.352720756586623e-22
+      ],
+      "mesh_delta_over_force": 0.0693678228853444,
+      "fit_delta_over_force": 0.030712818619165423
+    },
+    {
+      "point": "axis_y_+0.30",
+      "r": 0.3,
+      "force_h075_N": [
+        -3.0683262431336845e-21,
+        3.788678036495436e-19,
+        2.0552249712237294e-20
+      ],
+      "mesh_delta_over_force": 0.05833942523580171,
+      "fit_delta_over_force": 0.08063873664512908
+    },
+    {
+      "point": "axis_z_-0.30",
+      "r": 0.3,
+      "force_h075_N": [
+        4.781585296381182e-21,
+        1.0949658165285339e-21,
+        8.407406225768662e-19
+      ],
+      "mesh_delta_over_force": 0.018329357584511347,
+      "fit_delta_over_force": 0.06900547144478954
+    },
+    {
+      "point": "axis_z_-0.20",
+      "r": 0.2,
+      "force_h075_N": [
+        -6.5205124644665156e-21,
+        -7.655574744804342e-21,
+        5.467240875888689e-19
+      ],
+      "mesh_delta_over_force": 0.039592561973817435,
+      "fit_delta_over_force": 0.048675104912919126
+    },
+    {
+      "point": "axis_z_-0.10",
+      "r": 0.1,
+      "force_h075_N": [
+        -1.0887773182359794e-20,
+        -4.606750004611803e-21,
+        2.3997666190589114e-19
+      ],
+      "mesh_delta_over_force": 0.1265920969988523,
+      "fit_delta_over_force": 0.08479964778292218
+    },
+    {
+      "point": "axis_z_-0.05",
+      "r": 0.05,
+      "force_h075_N": [
+        -6.220716159853697e-21,
+        -1.6816387772286001e-21,
+        1.2726761304016865e-19
+      ],
+      "mesh_delta_over_force": 0.07639670748618195,
+      "fit_delta_over_force": 0.024136907234143114
+    },
+    {
+      "point": "axis_z_+0.05",
+      "r": 0.05,
+      "force_h075_N": [
+        -4.121343751311315e-21,
+        -1.880443779215068e-21,
+        -1.411657960423415e-19
+      ],
+      "mesh_delta_over_force": 0.08505839252029836,
+      "fit_delta_over_force": 0.04815166825214415
+    },
+    {
+      "point": "axis_z_+0.10",
+      "r": 0.1,
+      "force_h075_N": [
+        -3.0716575470416347e-21,
+        -1.979846280208538e-21,
+        -2.753825005835974e-19
+      ],
+      "mesh_delta_over_force": 0.05136235922988956,
+      "fit_delta_over_force": 0.035112531697426286
+    },
+    {
+      "point": "axis_z_+0.20",
+      "r": 0.2,
+      "force_h075_N": [
+        2.908286846801378e-21,
+        -3.2647866505157797e-20,
+        -5.4281066862940685e-19
+      ],
+      "mesh_delta_over_force": 0.10524361710932012,
+      "fit_delta_over_force": 0.05664515758359579
+    },
+    {
+      "point": "axis_z_+0.30",
+      "r": 0.3,
+      "force_h075_N": [
+        -8.332807651060436e-21,
+        -4.6484714894320216e-20,
+        -8.601251484476738e-19
+      ],
+      "mesh_delta_over_force": 0.06730058150215333,
+      "fit_delta_over_force": 0.0930176996359531
+    },
+    {
+      "point": "off_xy",
+      "r": 0.14142135623730953,
+      "force_h075_N": [
+        1.297932982094123e-19,
+        1.27215636457851e-19,
+        -6.001376014554921e-21
+      ],
+      "mesh_delta_over_force": 0.0404999649021132,
+      "fit_delta_over_force": 0.0215902510115785
+    },
+    {
+      "point": "off_xz",
+      "r": 0.14142135623730953,
+      "force_h075_N": [
+        1.2945641373814764e-19,
+        -6.976383339719505e-22,
+        -2.739977859495651e-19
+      ],
+      "mesh_delta_over_force": 0.11014158647046315,
+      "fit_delta_over_force": 0.03232545690348147
+    },
+    {
+      "point": "off_yz",
+      "r": 0.14142135623730953,
+      "force_h075_N": [
+        2.055796412877735e-21,
+        1.3856880978398707e-19,
+        -2.6398070350797633e-19
+      ],
+      "mesh_delta_over_force": 0.059494808363141326,
+      "fit_delta_over_force": 0.0427499840135078
+    },
+    {
+      "point": "off_xyz",
+      "r": 0.14142135623730953,
+      "force_h075_N": [
+        1.0202701154396542e-19,
+        -7.608213009627874e-20,
+        -2.684303447073051e-19
+      ],
+      "mesh_delta_over_force": 0.025247347390533754,
+      "fit_delta_over_force": 0.02693917679778071
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "mesh_parameters": {
+    "hmax_r0": 0.75,
+    "hcenter_r0": 0.18,
+    "dc_surface_h_r0": 0.1,
+    "transition_distance_r0": 0.6
+  },
+  "geometry_metadata": {
+    "dc_surface_h_r0": 0.1,
+    "dc_surface_entity_count": 8,
+    "dc_surface_entities": [
+      743,
+      744,
+      745,
+      746,
+      747,
+      748,
+      749,
+      750
+    ]
+  },
+  "vertices": 19820,
+  "tetrahedra": 76350,
+  "unique_edges": 111982,
+  "estimated_P2_dofs": 131802,
+  "purpose": "bounded mesh-size probe; no matrix assembly or electrostatic solve",
+  "limitations": [
+    "still polygonal CAD boundaries",
+    "ideal conductors in vacuum",
+    "surface refinement only on selected DC-ring CAD faces"
+  ]
+}

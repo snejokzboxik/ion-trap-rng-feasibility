@@ -1,0 +1,49 @@
+{
+  "equation": "x_ddot + 2 q cos(2 tau) x = 0; q=0.2; RF period pi in tau",
+  "reference_method": "DOP853 rtol=2e-13, atol=2e-15 over one period",
+  "reference_monodromy": [
+    [
+      0.9013853059533199,
+      3.7523627190497746
+    ],
+    [
+      -0.04996972421123029,
+      0.9013853059533335
+    ]
+  ],
+  "reference_beta": 0.1425513265398581,
+  "results": [
+    {
+      "steps_per_rf_period": 20,
+      "monodromy_relative_frobenius_error": 2.600814677387977e-06,
+      "floquet_beta": 0.1425468868955108,
+      "beta_error": 4.4396443473204705e-06,
+      "determinant": 0.9999990089331187,
+      "max_multiplier_modulus_error": 4.955335634049263e-07
+    },
+    {
+      "steps_per_rf_period": 40,
+      "monodromy_relative_frobenius_error": 1.5964112455649744e-07,
+      "floquet_beta": 0.1425510453059399,
+      "beta_error": 2.812339182090007e-07,
+      "determinant": 0.9999999687861028,
+      "max_multiplier_modulus_error": 1.5606948844393287e-08
+    },
+    {
+      "steps_per_rf_period": 80,
+      "monodromy_relative_frobenius_error": 9.909542040113762e-09,
+      "floquet_beta": 0.14255130890377488,
+      "beta_error": 1.7636083232686062e-08,
+      "determinant": 0.99999999902266,
+      "max_multiplier_modulus_error": 4.886698823369784e-10
+    },
+    {
+      "steps_per_rf_period": 160,
+      "monodromy_relative_frobenius_error": 6.175139177289287e-10,
+      "floquet_beta": 0.14255132543671256,
+      "beta_error": 1.1031455471322005e-09,
+      "determinant": 0.9999999999694422,
+      "max_multiplier_modulus_error": 1.5278889264891404e-11
+    }
+  ]
+}

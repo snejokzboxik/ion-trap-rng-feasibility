@@ -1,0 +1,251 @@
+{
+  "hcenter_target_r0": 0.06,
+  "mesh_file": "results\\m3a2_center_mesh_hc0p06.npz",
+  "mesh_probe": {
+    "hcenter_target_r0": 0.06,
+    "hmax_r0": 0.75,
+    "dc_surface_h_target_r0": 0.075,
+    "rf_surface_h_target_r0": 0.3,
+    "axial_end_h_target_r0": 0.3,
+    "mesh_size_min_effective_r0": 0.06,
+    "mesh_size_max_r0": 0.75,
+    "vertices": 33471,
+    "tetrahedra": 119786,
+    "unique_edges": 180853,
+    "estimated_P2_dofs": 214324,
+    "all_unique_edge_lengths_r0": {
+      "count": 180853,
+      "min": 0.013035012912346298,
+      "p10": 0.05190325428019074,
+      "median": 0.3433808734895078,
+      "p90": 0.8365314650407988,
+      "p99": 1.280544724661617,
+      "max": 1.5679182461346823
+    },
+    "central_edge_lengths_by_radius_r0": {
+      "0.15": {
+        "count": 40,
+        "min": 0.11599775396479663,
+        "p10": 0.12469091873503452,
+        "median": 0.14648847889219557,
+        "p90": 0.19826334998815506,
+        "p99": 0.22455646367477614,
+        "max": 0.22710812185058807
+      },
+      "0.3": {
+        "count": 150,
+        "min": 0.11599775396479663,
+        "p10": 0.13751738982599765,
+        "median": 0.19897212748617496,
+        "p90": 0.2704357512599472,
+        "p99": 0.32275826303985317,
+        "max": 0.33327308984107534
+      },
+      "0.5": {
+        "count": 305,
+        "min": 0.11599775396479663,
+        "p10": 0.1500397568273651,
+        "median": 0.25044413293213574,
+        "p90": 0.3881132231281854,
+        "p99": 0.4593782139277085,
+        "max": 0.49507955219798405
+      }
+    },
+    "tetrahedron_volume_r0_cubed": {
+      "count": 119786,
+      "min": 1.2296800087066666e-06,
+      "p10": 0.0002538872516511528,
+      "median": 0.00099032795564713,
+      "p90": 0.07562205481949485,
+      "p99": 0.13312160357535033,
+      "max": 0.20947158920328202
+    },
+    "tetrahedron_mean_ratio_quality_0_1": {
+      "count": 119786,
+      "min": 0.006333696271362848,
+      "p10": 0.15451858704228344,
+      "median": 0.3234341087524283,
+      "p90": 0.8680379748779492,
+      "p99": 0.9607769644441979,
+      "max": 0.9999840651547853
+    },
+    "central_tet_quality_centroid_radius_lt_0p5r0": {
+      "count": 263,
+      "min": 0.45706589875674,
+      "p10": 0.668322656969045,
+      "median": 0.8296409305516294,
+      "p90": 0.9284747217871469,
+      "p99": 0.9856417469555182,
+      "max": 0.9972934914801901
+    },
+    "geometry_metadata": {
+      "dc_surface_h_r0": 0.075,
+      "dc_surface_entity_count": 8,
+      "dc_surface_entities": [
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750
+      ],
+      "rf_surface_h_r0": 0.3,
+      "rf_surface_entity_count": 736,
+      "axial_end_h_r0": 0.3,
+      "mesh_size_min_effective_r0": 0.06,
+      "mesh_size_max_r0": 0.75
+    },
+    "purpose": "mesh-only probe; no P2 matrix assembly or field solve"
+  },
+  "geometry": "unchanged M2b.2 four hyperbolic RF branches, finite length 10r0, annular DC rings, empty vacuum, ideal conductors, polygonal boundary",
+  "normalization": {
+    "rf": "1 V differential peak pattern",
+    "dc": "1 V on each ring",
+    "coordinates": "r/r0"
+  },
+  "P2_dofs": 214324,
+  "fixed_dofs": 110414,
+  "missing_boundary_dofs": 0,
+  "terminal_boundary_dof_counts": {
+    "right": 22938,
+    "left": 22938,
+    "top": 22938,
+    "bottom": 22938,
+    "dc_plus": 5228,
+    "dc_minus": 5228
+  },
+  "terminal_tag_overlaps": [],
+  "matrix_nnz": 5223798,
+  "assembly_s": 3.212125499994727,
+  "factorization_s": 112.21939260000363,
+  "six_rhs_s": 1.576034100013203,
+  "local_nodal_potential_hessian_fits": {
+    "0.35": {
+      "rf": {
+        "samples": 218,
+        "rank": 10,
+        "condition": 8.730693201562659,
+        "relative_potential_residual": 4.279624974148698e-06,
+        "hessian_V_per_r0_squared": [
+          [
+            0.9998522759734105,
+            1.612207679855268e-07,
+            3.0570234299262706e-08
+          ],
+          [
+            1.612207679855268e-07,
+            -0.9998510356399192,
+            -3.7563198320956104e-06
+          ],
+          [
+            3.0570234299262706e-08,
+            -3.7563198320956104e-06,
+            -1.451532803311069e-06
+          ]
+        ],
+        "trace_V_per_r0_squared": -2.1119931195196649e-07,
+        "gradient_at_origin_V_per_r0": [
+          4.387310319110232e-07,
+          -6.150782836583906e-08,
+          -4.759186074789271e-07
+        ]
+      },
+      "dc": {
+        "samples": 218,
+        "rank": 10,
+        "condition": 8.730693201562659,
+        "relative_potential_residual": 0.0015853428623883664,
+        "hessian_V_per_r0_squared": [
+          [
+            -9.38376408106374e-05,
+            1.884106924061721e-07,
+            5.652102960951556e-07
+          ],
+          [
+            1.884106924061721e-07,
+            -9.390316564527881e-05,
+            -7.703045959658663e-08
+          ],
+          [
+            5.652102960951556e-07,
+            -7.703045959658663e-08,
+            0.00018922222297461039
+          ]
+        ],
+        "trace_V_per_r0_squared": 1.4814165186941908e-06,
+        "gradient_at_origin_V_per_r0": [
+          2.5555102925655295e-08,
+          1.1280114235884125e-07,
+          -1.902787467914395e-07
+        ]
+      }
+    },
+    "0.5": {
+      "rf": {
+        "samples": 351,
+        "rank": 10,
+        "condition": 8.435275098329054,
+        "relative_potential_residual": 8.845555015680978e-06,
+        "hessian_V_per_r0_squared": [
+          [
+            0.9998499696574931,
+            4.388555292925627e-07,
+            -7.047086309230639e-07
+          ],
+          [
+            4.388555292925627e-07,
+            -0.9998531100542438,
+            -3.3776800626398273e-06
+          ],
+          [
+            -7.047086309230639e-07,
+            -3.3776800626398273e-06,
+            -9.309283969041737e-07
+          ]
+        ],
+        "trace_V_per_r0_squared": -4.071325147660121e-06,
+        "gradient_at_origin_V_per_r0": [
+          4.5432161668640045e-07,
+          -3.3256460191927704e-07,
+          -5.394150261903651e-07
+        ]
+      },
+      "dc": {
+        "samples": 351,
+        "rank": 10,
+        "condition": 8.435275098329054,
+        "relative_potential_residual": 0.006527199163620065,
+        "hessian_V_per_r0_squared": [
+          [
+            -9.49684843500401e-05,
+            5.138532917001568e-08,
+            6.87905131382868e-07
+          ],
+          [
+            5.138532917001568e-08,
+            -9.484109004572398e-05,
+            -9.457888448540826e-07
+          ],
+          [
+            6.87905131382868e-07,
+            -9.457888448540826e-07,
+            0.00018889221037713828
+          ]
+        ],
+        "trace_V_per_r0_squared": -9.173640186257808e-07,
+        "gradient_at_origin_V_per_r0": [
+          5.508870235423426e-08,
+          3.519858432884741e-08,
+          -2.9991580705866914e-07
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "linear polygonal geometry; perfect conductors; vacuum; no dielectric stack",
+    "P2 gradients are elementwise discontinuous",
+    "mesh-only central refinement; RF/DC terminal geometry unchanged"
+  ]
+}

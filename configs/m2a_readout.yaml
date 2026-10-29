@@ -1,0 +1,28 @@
+scope: bounded_local_2d_readout_study
+trap:
+  reference_ion: 40Ca+
+  r0_m: 1.0e-6
+  v_rf_differential_peak_v: 10.0
+  secular_frequency_hz: 174784224.51498774
+  electrode_thickness_over_r0: 0.1
+  electrode_extent_over_r0: 1.5
+  in_plane_end_cap_radius_over_r0: 0.05
+  outer_grounded_boundary_over_r0: 6.0
+  straight_electrode_length_over_r0: 10.0
+mesh:
+  h_min_over_r0: [0.05, 0.025, 0.0125, 0.00625, 0.003125]
+  hyperbola_samples_per_branch: 100
+  geometry_sensitivity_samples_per_branch: [50, 200]
+readout:
+  motion_amplitude_nm: [1.0, 10.0, 100.0, 500.0]
+  parasitic_capacitance_f: [1.0e-13, 1.0e-12, 1.0e-11]
+  temperature_k: 300.0
+  resistive_input_resistance_ohm: [10000.0, 1000000.0]
+  resistive_enbw_hz: [1000.0, 10000.0, 100000.0]
+  resonator_loaded_q: [100, 1000, 10000]
+  amplifier_voltage_noise_v_rt_hz: 2.0e-9
+  amplifier_current_noise_a_rt_hz: 2.0e-15
+  voltage_noise_sensitivity_v_rt_hz: [5.0e-10, 2.0e-9, 1.0e-8]
+poisson_examples:
+  event_rate_per_s: [0.001, 1.0, 1000.0, 100000.0]
+  interval_s: [1.0e-6, 1.0e-4, 1.0e-2]

@@ -1,0 +1,207 @@
+{
+  "40Ca+": {
+    "mass_u_neutral_isotope_approx": 39.962590863,
+    "scenario_A_fixed_q_V_r0": {
+      "f_rf_hz": 2472999115.9262714,
+      "f_sec_hz": 174867444.47398037,
+      "depth_j": 4.0054415850000003e-20,
+      "depth_ev": 0.25000000000000006,
+      "field_v_m": 10000000.0,
+      "f_axial_hz_fixed_curvature": 1000000.0
+    },
+    "scenario_B_100MHz": {
+      "f_rf_hz": 100000000.0,
+      "f_sec_hz": 7071067.811865475,
+      "vdiff_peak_v": 0.016351292135102106,
+      "depth_j": 6.549414548642141e-23,
+      "depth_ev": 0.00040878230337755263,
+      "field_v_m": 16351.292135102107
+    },
+    "scenario_B_1GHz": {
+      "f_rf_hz": 1000000000.0,
+      "f_sec_hz": 70710678.11865474,
+      "vdiff_peak_v": 1.6351292135102107,
+      "depth_j": 6.5494145486421414e-21,
+      "depth_ev": 0.04087823033775527,
+      "field_v_m": 1635129.2135102109
+    },
+    "thermal_Ca_reference_mode_300K": {
+      "x_rms_m_classical": 2.2738513489863634e-07,
+      "v_rms_m_s_classical": 249.83363179701732,
+      "image_current_rms_a_conditional": 1.601110429010162e-11,
+      "x_zpf_m": 8.504079264415795e-10,
+      "mean_occupation_classical": 35746.995421600026
+    },
+    "thermal_Ca_reference_mode_1mK": {
+      "x_rms_m_classical": 4.151465587511277e-10,
+      "v_rms_m_s_classical": 0.45613171919555445,
+      "image_current_rms_a_conditional": 2.923214330085466e-14,
+      "x_zpf_m": 8.504079264415795e-10,
+      "mean_occupation_classical": 0.11915665140533344
+    }
+  },
+  "88Sr+": {
+    "mass_u_neutral_isotope_approx": 87.9056125,
+    "scenario_A_fixed_q_V_r0": {
+      "f_rf_hz": 1667410290.0399678,
+      "f_sec_hz": 117903712.31074892,
+      "depth_j": 4.0054415850000003e-20,
+      "depth_ev": 0.25000000000000006,
+      "field_v_m": 10000000.0,
+      "f_axial_hz_fixed_curvature": 674246.2135557347
+    },
+    "scenario_B_100MHz": {
+      "f_rf_hz": 100000000.0,
+      "f_sec_hz": 7071067.811865475,
+      "vdiff_peak_v": 0.03596789695718641,
+      "depth_j": 1.4406731019730942e-22,
+      "depth_ev": 0.0008991974239296604,
+      "field_v_m": 35967.896957186415
+    },
+    "scenario_B_1GHz": {
+      "f_rf_hz": 1000000000.0,
+      "f_sec_hz": 70710678.11865474,
+      "vdiff_peak_v": 3.5967896957186416,
+      "depth_j": 1.4406731019730944e-20,
+      "depth_ev": 0.08991974239296605,
+      "field_v_m": 3596789.695718642
+    },
+    "thermal_Ca_reference_mode_300K": {
+      "x_rms_m_classical": 2.2738513489863642e-07,
+      "v_rms_m_s_classical": 168.44938025801656,
+      "image_current_rms_a_conditional": 1.0795426442447e-11,
+      "x_zpf_m": 6.98291181636263e-10,
+      "mean_occupation_classical": 53017.71771632664
+    },
+    "thermal_Ca_reference_mode_1mK": {
+      "x_rms_m_classical": 4.1514655875112787e-10,
+      "v_rms_m_s_classical": 0.30754508455027024,
+      "image_current_rms_a_conditional": 1.9709661934719892e-14,
+      "x_zpf_m": 6.98291181636263e-10,
+      "mean_occupation_classical": 0.17672572572108883
+    }
+  },
+  "171Yb+": {
+    "mass_u_neutral_isotope_approx": 170.9363302,
+    "scenario_A_fixed_q_V_r0": {
+      "f_rf_hz": 1195731282.997087,
+      "f_sec_hz": 84550969.86841309,
+      "depth_j": 4.0054415850000003e-20,
+      "depth_ev": 0.25000000000000006,
+      "field_v_m": 10000000.0,
+      "f_axial_hz_fixed_curvature": 483514.64232093794
+    },
+    "scenario_B_100MHz": {
+      "f_rf_hz": 100000000.0,
+      "f_sec_hz": 7071067.811865475,
+      "vdiff_peak_v": 0.06994115774886607,
+      "depth_j": 2.8014522175035316e-22,
+      "depth_ev": 0.0017485289437216519,
+      "field_v_m": 69941.15774886607
+    },
+    "scenario_B_1GHz": {
+      "f_rf_hz": 1000000000.0,
+      "f_sec_hz": 70710678.11865474,
+      "vdiff_peak_v": 6.994115774886607,
+      "depth_j": 2.8014522175035314e-20,
+      "depth_ev": 0.17485289437216517,
+      "field_v_m": 6994115.774886607
+    },
+    "thermal_Ca_reference_mode_300K": {
+      "x_rms_m_classical": 2.2738513489863634e-07,
+      "v_rms_m_s_classical": 120.79821911807575,
+      "image_current_rms_a_conditional": 7.741603363991722e-12,
+      "x_zpf_m": 5.913329982576471e-10,
+      "mean_occupation_classical": 73931.56751160511
+    },
+    "thermal_Ca_reference_mode_1mK": {
+      "x_rms_m_classical": 4.151465587511277e-10,
+      "v_rms_m_s_classical": 0.220546365058073,
+      "image_current_rms_a_conditional": 1.4134169312387144e-14,
+      "x_zpf_m": 5.913329982576471e-10,
+      "mean_occupation_classical": 0.24643855837201709
+    }
+  },
+  "9Be+": {
+    "mass_u_neutral_isotope_approx": 9.012183065,
+    "scenario_A_fixed_q_V_r0": {
+      "f_rf_hz": 5207577920.527943,
+      "f_sec_hz": 368231366.1162648,
+      "depth_j": 4.0054415850000003e-20,
+      "depth_ev": 0.25000000000000006,
+      "field_v_m": 10000000.0,
+      "f_axial_hz_fixed_curvature": 2105774.275045555
+    },
+    "scenario_B_100MHz": {
+      "f_rf_hz": 100000000.0,
+      "f_sec_hz": 7071067.811865475,
+      "vdiff_peak_v": 0.003687469578136669,
+      "depth_j": 1.476994399169102e-23,
+      "depth_ev": 9.218673945341673e-05,
+      "field_v_m": 3687.469578136669
+    },
+    "scenario_B_1GHz": {
+      "f_rf_hz": 1000000000.0,
+      "f_sec_hz": 70710678.11865474,
+      "vdiff_peak_v": 0.36874695781366695,
+      "depth_j": 1.4769943991691024e-21,
+      "depth_ev": 0.009218673945341675,
+      "field_v_m": 368746.95781366696
+    },
+    "thermal_Ca_reference_mode_300K": {
+      "x_rms_m_classical": 2.273851348986364e-07,
+      "v_rms_m_s_classical": 526.0932348793623,
+      "image_current_rms_a_conditional": 3.371577152916752e-11,
+      "x_zpf_m": 1.2340512816901815e-09,
+      "mean_occupation_classical": 16975.70145348399
+    },
+    "thermal_Ca_reference_mode_1mK": {
+      "x_rms_m_classical": 4.1514655875112777e-10,
+      "v_rms_m_s_classical": 0.9605104403143014,
+      "image_current_rms_a_conditional": 6.1556295367385e-14,
+      "x_zpf_m": 1.2340512816901815e-09,
+      "mean_occupation_classical": 0.05658567151161331
+    }
+  },
+  "electron": {
+    "mass_u_neutral_isotope_approx": 0.000548579909065,
+    "scenario_A_fixed_q_V_r0": {
+      "f_rf_hz": 667468585506.9218,
+      "f_sec_hz": 47197156304.09373,
+      "depth_j": 4.0054415850000003e-20,
+      "depth_ev": 0.25000000000000006,
+      "field_v_m": 10000000.0,
+      "f_axial_hz_fixed_curvature": 269902476.3932918
+    },
+    "scenario_B_100MHz": {
+      "f_rf_hz": 100000000.0,
+      "f_sec_hz": 7071067.811865475,
+      "vdiff_peak_v": 2.2445967988713592e-07,
+      "depth_j": 8.990601359757224e-28,
+      "depth_ev": 5.611491997178399e-09,
+      "field_v_m": 0.22445967988713594
+    },
+    "scenario_B_1GHz": {
+      "f_rf_hz": 1000000000.0,
+      "f_sec_hz": 70710678.11865474,
+      "vdiff_peak_v": 2.244596798871359e-05,
+      "depth_j": 8.990601359757223e-26,
+      "depth_ev": 5.611491997178399e-07,
+      "field_v_m": 22.445967988713594
+    },
+    "thermal_Ca_reference_mode_300K": {
+      "x_rms_m_classical": 2.273851348986364e-07,
+      "v_rms_m_s_classical": 67430.7159083448,
+      "image_current_rms_a_conditional": 4.321436697689685e-09,
+      "x_zpf_m": 1.3971104276810288e-08,
+      "mean_occupation_classical": 132.44411796174427
+    },
+    "thermal_Ca_reference_mode_1mK": {
+      "x_rms_m_classical": 4.1514655875112777e-10,
+      "v_rms_m_s_classical": 123.1110805724097,
+      "image_current_rms_a_conditional": 7.889827867184246e-12,
+      "x_zpf_m": 1.3971104276810288e-08,
+      "mean_occupation_classical": 0.0004414803932058143
+    }
+  }
+}

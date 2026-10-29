@@ -1,0 +1,16 @@
+{
+  "stage": "R0 preparation only; user approval required before remote execution",
+  "reference_stage": "M3a3 symmetry-reduced octant P2 electrostatics",
+  "mesh_tag": "plateau014",
+  "existing_mesh_required": "results/m3a3_octant_mesh_plateau014.npz",
+  "python": "3.12",
+  "threads": 1,
+  "minimum_free_memory_gib": 13,
+  "estimated_peak_memory_gib": 8,
+  "reserved_memory_gib": 5,
+  "minimum_free_disk_gib": 10,
+  "max_worker_memory_gib": 8,
+  "outputs": ["results/m3a3_octant_fields_plateau014.npz", "results/m3a3_octant_boundary_plateau014.json"],
+  "stop_policy": "refuse to launch if preflight or configured memory guard fails; never kill other jobs",
+  "scope": "single sequential P2 solve only; no sweep, trajectory, entropy, or RF full-wave solve"
+}

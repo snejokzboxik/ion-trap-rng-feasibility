@@ -1,0 +1,179 @@
+{
+  "purpose": "Cross-mesh field-gradient audit in the central vacuum region; no trajectories.",
+  "coordinate_units": "r/r0; gradients are derivative per normalized coordinate",
+  "field_normalization": "RF basis is 1 V differential between opposing pairs; DC basis is 1 V on each ring",
+  "mesh_files": {
+    "h015": "m2b2_dc_surface_refined_p2_fields_h0p15.npz",
+    "h010": "m2b2_dc_surface_refined_p2_fields_effective_h0p1.npz",
+    "h0075": "m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz"
+  },
+  "mesh_geometry": "M2b.2 ideal-conductor vacuum polygonal geometry",
+  "sample": "deterministic Sobol points uniformly distributed in each ball",
+  "results": [
+    {
+      "radius_r0": 0.05,
+      "field": "rf_potential",
+      "comparison": "h015->h010",
+      "points": 256,
+      "gradient_difference_rms": 3.1848028140526527e-06,
+      "fine_gradient_rms": 0.03159383419896163,
+      "relative_rms_difference": 0.00010080456819506018,
+      "max_pointwise_difference": 4.129395005337629e-06
+    },
+    {
+      "radius_r0": 0.05,
+      "field": "rf_potential",
+      "comparison": "h010->h0075",
+      "points": 256,
+      "gradient_difference_rms": 3.902403983910538e-06,
+      "fine_gradient_rms": 0.03159384662578799,
+      "relative_rms_difference": 0.0001235178492233757,
+      "max_pointwise_difference": 4.7486013520025025e-06
+    },
+    {
+      "radius_r0": 0.05,
+      "field": "dc_potential",
+      "comparison": "h015->h010",
+      "points": 256,
+      "gradient_difference_rms": 1.4502649016194995e-06,
+      "fine_gradient_rms": 5.239647501143219e-06,
+      "relative_rms_difference": 0.27678673065374565,
+      "max_pointwise_difference": 2.3586519087506317e-06
+    },
+    {
+      "radius_r0": 0.05,
+      "field": "dc_potential",
+      "comparison": "h010->h0075",
+      "points": 256,
+      "gradient_difference_rms": 7.64605469376936e-07,
+      "fine_gradient_rms": 5.228362164713948e-06,
+      "relative_rms_difference": 0.1462418717925155,
+      "max_pointwise_difference": 1.2573970627624365e-06
+    },
+    {
+      "radius_r0": 0.1,
+      "field": "rf_potential",
+      "comparison": "h015->h010",
+      "points": 256,
+      "gradient_difference_rms": 3.042898055544786e-06,
+      "fine_gradient_rms": 0.06318732319151105,
+      "relative_rms_difference": 4.81567805352702e-05,
+      "max_pointwise_difference": 5.09058213431157e-06
+    },
+    {
+      "radius_r0": 0.1,
+      "field": "rf_potential",
+      "comparison": "h010->h0075",
+      "points": 256,
+      "gradient_difference_rms": 4.320853140838982e-06,
+      "fine_gradient_rms": 0.06318774393705677,
+      "relative_rms_difference": 6.838119026916225e-05,
+      "max_pointwise_difference": 7.732331957805121e-06
+    },
+    {
+      "radius_r0": 0.1,
+      "field": "dc_potential",
+      "comparison": "h015->h010",
+      "points": 256,
+      "gradient_difference_rms": 1.3771963141237486e-06,
+      "fine_gradient_rms": 1.0364363022063693e-05,
+      "relative_rms_difference": 0.1328780467445967,
+      "max_pointwise_difference": 2.407321960837236e-06
+    },
+    {
+      "radius_r0": 0.1,
+      "field": "dc_potential",
+      "comparison": "h010->h0075",
+      "points": 256,
+      "gradient_difference_rms": 7.306377552692235e-07,
+      "fine_gradient_rms": 1.0433969281559771e-05,
+      "relative_rms_difference": 0.0700249095577173,
+      "max_pointwise_difference": 1.4981116130524364e-06
+    },
+    {
+      "radius_r0": 0.2,
+      "field": "rf_potential",
+      "comparison": "h015->h010",
+      "points": 256,
+      "gradient_difference_rms": 3.847710497146963e-06,
+      "fine_gradient_rms": 0.12637425987383494,
+      "relative_rms_difference": 3.0446947827732512e-05,
+      "max_pointwise_difference": 8.997725816407997e-06
+    },
+    {
+      "radius_r0": 0.2,
+      "field": "rf_potential",
+      "comparison": "h010->h0075",
+      "points": 256,
+      "gradient_difference_rms": 5.202408499881205e-06,
+      "fine_gradient_rms": 0.12637590600959128,
+      "relative_rms_difference": 4.116614206102205e-05,
+      "max_pointwise_difference": 1.069544937553185e-05
+    },
+    {
+      "radius_r0": 0.2,
+      "field": "dc_potential",
+      "comparison": "h015->h010",
+      "points": 256,
+      "gradient_difference_rms": 1.4989056322480926e-06,
+      "fine_gradient_rms": 2.0336865897017438e-05,
+      "relative_rms_difference": 0.07370386567125463,
+      "max_pointwise_difference": 5.289273276564343e-06
+    },
+    {
+      "radius_r0": 0.2,
+      "field": "dc_potential",
+      "comparison": "h010->h0075",
+      "points": 256,
+      "gradient_difference_rms": 1.1140151184441322e-06,
+      "fine_gradient_rms": 2.051006570839339e-05,
+      "relative_rms_difference": 0.054315531421639515,
+      "max_pointwise_difference": 4.319274824596039e-06
+    },
+    {
+      "radius_r0": 0.3,
+      "field": "rf_potential",
+      "comparison": "h015->h010",
+      "points": 256,
+      "gradient_difference_rms": 5.345149667375396e-06,
+      "fine_gradient_rms": 0.18956156178273126,
+      "relative_rms_difference": 2.8197434211382037e-05,
+      "max_pointwise_difference": 2.2182958352089383e-05
+    },
+    {
+      "radius_r0": 0.3,
+      "field": "rf_potential",
+      "comparison": "h010->h0075",
+      "points": 256,
+      "gradient_difference_rms": 6.784978447733406e-06,
+      "fine_gradient_rms": 0.18956348908795267,
+      "relative_rms_difference": 3.579264382808098e-05,
+      "max_pointwise_difference": 2.7380671182169388e-05
+    },
+    {
+      "radius_r0": 0.3,
+      "field": "dc_potential",
+      "comparison": "h015->h010",
+      "points": 256,
+      "gradient_difference_rms": 2.2394911861368622e-06,
+      "fine_gradient_rms": 3.050258048399111e-05,
+      "relative_rms_difference": 0.07341972877711873,
+      "max_pointwise_difference": 6.65931064372987e-06
+    },
+    {
+      "radius_r0": 0.3,
+      "field": "dc_potential",
+      "comparison": "h010->h0075",
+      "points": 256,
+      "gradient_difference_rms": 1.7895071552588177e-06,
+      "fine_gradient_rms": 3.088357619328538e-05,
+      "relative_rms_difference": 0.057943650827843154,
+      "max_pointwise_difference": 7.054020001217654e-06
+    }
+  ],
+  "limitations": [
+    "three meshes vary DC-ring surface size only; center, RF and end sizes are fixed",
+    "P2 gradients are elementwise and discontinuous at tetrahedral faces",
+    "the FEM geometry is polygonal and PEC; this is not experimental field validation"
+  ]
+}

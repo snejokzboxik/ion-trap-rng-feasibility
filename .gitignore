@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+LITERATURE_SESSION_NOTES.json
+results/pytest_*/
+results/pytest-*/
+build/
+dist/
+*.egg-info/
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini

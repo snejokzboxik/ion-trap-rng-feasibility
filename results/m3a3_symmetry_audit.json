@@ -1,0 +1,66 @@
+{
+  "purpose": "preflight geometry and excitation symmetry; no FEM",
+  "geometry": {
+    "rf_profile_hausdorff_residual_r0": {
+      "reflect_x_right_to_left": 0.0,
+      "reflect_y_top_to_bottom": 0.0,
+      "reflect_y_right_to_right": 8.005932084973442e-16,
+      "reflect_x_top_to_top": 8.005932084973442e-16
+    },
+    "central_hyperbola_max_residual_r0_squared": {
+      "right": 4.440892098500626e-16,
+      "left": 4.440892098500626e-16,
+      "top": 4.440892098500626e-16,
+      "bottom": 4.440892098500626e-16
+    },
+    "rf_rail_z_extent_r0": [
+      -5.0,
+      5.0
+    ],
+    "dc_ring_centers_z_r0": [
+      -5.5,
+      5.5
+    ],
+    "dc_ring_thickness_r0": 0.2,
+    "dc_ring_inner_outer_r0": [
+      0.5,
+      1.5
+    ],
+    "grounded_enclosure_half_extents_r0": [
+      6.0,
+      6.0,
+      7.0
+    ]
+  },
+  "excitation_patterns": {
+    "rf_terminal_values_V_per_Vdiff": {
+      "right": 0.5,
+      "left": 0.5,
+      "top": -0.5,
+      "bottom": -0.5
+    },
+    "rf_invariant_under_reflection": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "dc_terminal_values_V_per_Vring": {
+      "dc_plus": 1.0,
+      "dc_minus": 1.0
+    },
+    "dc_invariant_under_reflection": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "individual_terminal_basis_fields_are_not_all_invariant": true
+  },
+  "octant_boundary_conditions": {
+    "open_vacuum_parts_of_x0_y0_z0": "homogeneous Neumann by even scalar-potential symmetry",
+    "electrode_cross_sections_on_symmetry_planes": "Dirichlet at that conductor terminal voltage, not Neumann",
+    "grounded_outer_faces": "Dirichlet zero",
+    "physical_RF_and_DC_surfaces": "Dirichlet at paired terminal voltage",
+    "individual_terminal_weighting_fields": "do not reuse octant BC unless that specific excitation is proven even"
+  },
+  "interpretation": "Expected exact geometric/electrical symmetry permits octant reduction for the paired RF and symmetric DC patterns. Numerical symmetry enforced on octant planes is not an accuracy check."
+}

@@ -1,0 +1,23 @@
+{
+  "field_file": "results/m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz",
+  "benchmark_point_xi": [
+    0.08,
+    0.04,
+    0.1
+  ],
+  "repetitions_per_field": 5000,
+  "seconds_per_single_point_P2_gradient": {
+    "dc": 0.00039990497999824583,
+    "rf": 0.0003604527999996208
+  },
+  "estimated_rhs_evaluations_RK4_80steps_per_RF_period": 791360,
+  "estimated_one_axial_period_s_direct_P2": 601.7167327791117,
+  "estimated_five_axial_period_s_one_trajectory": 3008.5836638955584,
+  "assumptions": [
+    "1 MHz axial period contains 2473 RF periods",
+    "four RK4 force evaluations per step",
+    "one DC and one RF gradient per RHS evaluation",
+    "constant measured per-point evaluator time; excludes output and solver overhead"
+  ],
+  "interpretation": "local microbenchmark, not a large simulation"
+}

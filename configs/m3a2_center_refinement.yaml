@@ -1,0 +1,34 @@
+stage: M3a.2
+purpose: central P2 force convergence and mirror symmetry; conditional trajectory gate
+geometry:
+  source: M2b.2 ideal-conductor empty-vacuum four-hyperbola geometry
+  rf_electrodes: four separate finite hyperbolic branches, unchanged
+  axial_electrodes: existing symmetric annular DC rings, unchanged
+  outer_boundary: existing grounded enclosure, unchanged
+  r0_m: 1.0e-6
+mesh:
+  hmax_r0: 0.75
+  hcenter_targets_r0: [0.18, 0.09, 0.06]
+  dc_surface_h_r0: 0.075
+  rf_surface_h_r0: 0.30
+  axial_end_h_r0: 0.30
+  local_min_size_policy: min(hcenter, dc_surface, rf_surface, axial_end)
+field_normalization:
+  rf_differential_peak_V: 10.0
+  dc_voltage_each_ring_V: 0.08697882845042744
+  dc_voltage_policy: fixed_across_all_meshes
+  rf_frequency_Hz: 2.472831e9
+  ion: Ca40+
+  coordinates: xi = r/r0
+analysis:
+  axis_displacements_r0: [-0.20, -0.10, -0.05, 0.05, 0.10, 0.20]
+  off_axis_points_r0: [[0.10,0.10,0],[0.10,0,0.10],[0,0.10,0.10],[0.08,-0.06,0.10]]
+  fixed_symmetry_domain_radius_r0: 0.30
+  hessian_fit_radii_r0: [0.35, 0.50]
+  gradient_recovery_samples: 512
+conditional_dynamics:
+  launch_condition: central force convergence and symmetry gate must pass
+  requested_windows_if_passed: [0.1 axial period, 1 axial period]
+  status: not_run_force_gate_failed
+  stochastic_forces: false
+  remote_compute: false

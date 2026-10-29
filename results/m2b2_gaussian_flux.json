@@ -1,0 +1,83 @@
+{
+  "method": "central radial finite difference of P2 interpolated potential; bounded batches of 16; normalized model units",
+  "scope": "DC field at one sphere radius; finite-difference/quadrature diagnostic, not a high-order flux estimator",
+  "results": [
+    {
+      "file": "m2b2_dc_surface_refined_p2_fields_h0p15.npz",
+      "radius_r0": 0.5,
+      "n_mu": 8,
+      "n_phi": 16,
+      "points": 128,
+      "fd_step_r0": 0.02,
+      "net_flux_normalized": 1.3026641717600507e-07,
+      "integral_abs_normal_field": 0.00011266147567398318,
+      "relative_gauss_residual": 0.0011562640769322656
+    },
+    {
+      "file": "m2b2_dc_surface_refined_p2_fields_h0p15.npz",
+      "radius_r0": 0.5,
+      "n_mu": 12,
+      "n_phi": 24,
+      "points": 288,
+      "fd_step_r0": 0.02,
+      "net_flux_normalized": -2.1756436433619558e-08,
+      "integral_abs_normal_field": 0.00011012485736816956,
+      "relative_gauss_residual": 0.00019756154017873924
+    },
+    {
+      "file": "m2b2_dc_surface_refined_p2_fields_h0p15.npz",
+      "radius_r0": 0.5,
+      "n_mu": 12,
+      "n_phi": 24,
+      "points": 288,
+      "fd_step_r0": 0.01,
+      "net_flux_normalized": -4.195511556269055e-08,
+      "integral_abs_normal_field": 0.00011007821740696586,
+      "relative_gauss_residual": 0.00038113912589608843
+    },
+    {
+      "file": "m2b2_dc_surface_refined_p2_fields_effective_h0p1.npz",
+      "radius_r0": 0.5,
+      "n_mu": 8,
+      "n_phi": 16,
+      "points": 128,
+      "fd_step_r0": 0.02,
+      "net_flux_normalized": -6.035111593882664e-07,
+      "integral_abs_normal_field": 0.00011355493539446351,
+      "relative_gauss_residual": 0.0053147065540727805
+    },
+    {
+      "file": "m2b2_dc_surface_refined_p2_fields_effective_h0p1.npz",
+      "radius_r0": 0.5,
+      "n_mu": 12,
+      "n_phi": 24,
+      "points": 288,
+      "fd_step_r0": 0.02,
+      "net_flux_normalized": -4.244917588228535e-07,
+      "integral_abs_normal_field": 0.00011109421774212163,
+      "relative_gauss_residual": 0.003821006776502162
+    },
+    {
+      "file": "m2b2_dc_surface_refined_p2_fields_effective_h0p1.npz",
+      "radius_r0": 0.5,
+      "n_mu": 12,
+      "n_phi": 24,
+      "points": 288,
+      "fd_step_r0": 0.01,
+      "net_flux_normalized": -4.232241475375132e-07,
+      "integral_abs_normal_field": 0.0001110918538349243,
+      "relative_gauss_residual": 0.0038096776039618385
+    },
+    {
+      "file": "m2b2_dc_surface_refined_p2_fields_effective_h0p075.npz",
+      "radius_r0": 0.5,
+      "n_mu": 12,
+      "n_phi": 24,
+      "points": 288,
+      "fd_step_r0": 0.02,
+      "net_flux_normalized": -5.688508863439006e-08,
+      "integral_abs_normal_field": 0.00011208662308783152,
+      "relative_gauss_residual": 0.0005075100584466238
+    }
+  ]
+}
