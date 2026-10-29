@@ -44,7 +44,7 @@ for name, reason in [("LITERATURE_SESSION_NOTES.json", "raw search-response snip
         excluded.append({"path": name, "size_bytes": p.stat().st_size, "sha256": sha256(p), "reason": reason})
 manifest = {
     "project": "ion-trap-rng-feasibility",
-    "status": "published public repository; verified fresh clone and tests during Stage R0.1",
+    "status": "public repository; R0.2 remote FEM workflow repair pushed and verified in a fresh clone",
     "publication": {
         "url": "https://github.com/snejokzboxik/ion-trap-rng-feasibility",
         "visibility": "PUBLIC",

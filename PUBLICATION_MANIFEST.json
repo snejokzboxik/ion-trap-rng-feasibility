@@ -1,6 +1,6 @@
 {
   "project": "ion-trap-rng-feasibility",
-  "status": "published public repository; verified fresh clone and tests during Stage R0.1",
+  "status": "public repository; R0.2 remote FEM workflow repair pushed and verified in a fresh clone",
   "publication": {
     "url": "https://github.com/snejokzboxik/ion-trap-rng-feasibility",
     "visibility": "PUBLIC",
@@ -685,8 +685,8 @@
     },
     {
       "path": "scripts/audit_publication.py",
-      "size_bytes": 3005,
-      "sha256": "04f8fdfe8082e6ac0e726b3153e97a0d75f847a6f5add9705382f93a75bb8d41"
+      "size_bytes": 3015,
+      "sha256": "538ecf912022ddbec9d7770edb0608aa8f10f13ae8254005742d74c36daa5d45"
     },
     {
       "path": "scripts/compare_species.py",
@@ -875,8 +875,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "size_bytes": 57025,
-      "sha256": "0490068db2168cce1f6935e6a72ad44597c3bb4a89538dc3406c06d494f86f8f"
+      "size_bytes": 58285,
+      "sha256": "6ee9dfa9e8733f212cb6124dc2fd551a2212c5822bbf47d3671705c4bcf5da7b"
     },
     {
       "path": "src/iontrap_rng/__init__.py",
@@ -1018,8 +1018,8 @@
     },
     {
       "path": "PUBLICATION_MANIFEST.json",
-      "size_bytes": 36869,
-      "sha256": "138dee4679a1951f90688f02054f28f54a8a1448dab7c4a158aed45f5f31ceef",
+      "size_bytes": 36879,
+      "sha256": "cc86eee4f3eceb8a3540149941e303cbad6185c91b298e35d6217bbeade391c4",
       "reason": "manifest does not hash itself"
     }
   ]
