@@ -65,8 +65,13 @@
     },
     {
       "path": "configs/r0_remote_fem.json",
-      "size_bytes": 761,
-      "sha256": "c07e713d6d5f352a194f65acf4cb64e4efaafcf5736eca0d310201050bf5ffa9"
+      "size_bytes": 1163,
+      "sha256": "38587f6afbec20563c2b3e41b89377af2a5f1160f969168532e00161f5d2c6e1"
+    },
+    {
+      "path": "configs/r0_remote_fem.sha256",
+      "size_bytes": 86,
+      "sha256": "ad1291d10b09d0ec5d25c3f28c12b0484dc42242da10934ba3621b656060d1fe"
     },
     {
       "path": "LITERATURE_AUDIT_RU.md",
@@ -150,13 +155,18 @@
     },
     {
       "path": "remote/collect_results.ps1",
-      "size_bytes": 841,
-      "sha256": "ed9abfc33b4b1f39f09ebf74ea0c3f6f72c82e771412f660bb1315fb39ff96d5"
+      "size_bytes": 847,
+      "sha256": "12690242551c1a2e707c0ac1c0b444e5c8a4bbd4a045da77098fdec8d92998be"
+    },
+    {
+      "path": "remote/preflight.ps1",
+      "size_bytes": 11651,
+      "sha256": "5271ac34131043c14fafb0384be1e66fcd24a84eb2a1773787654b1b7c9153b7"
     },
     {
       "path": "remote/run_fem.ps1",
-      "size_bytes": 2508,
-      "sha256": "e1c69c921857e77bbe7980db59902c005c65d30167c429935377fc0a563871d7"
+      "size_bytes": 6400,
+      "sha256": "1e117e939817335201c39f6cd6517e3c65c02d5691a9e2e38a691d5043ba24fe"
     },
     {
       "path": "remote/setup_windows.ps1",
@@ -165,13 +175,13 @@
     },
     {
       "path": "remote/verify_results.ps1",
-      "size_bytes": 827,
-      "sha256": "aac1297e74b872cf7badc1c2a3b8111882924c3c690a7f5ae14f66dd833d98a9"
+      "size_bytes": 992,
+      "sha256": "dbe69cf8ba092c004d2c39e20ddfb1036d371bef41cde6bb6996fd79fee24952"
     },
     {
       "path": "REMOTE_FEM_EXECUTION_GUIDE_RU.md",
-      "size_bytes": 8078,
-      "sha256": "605d26568c644c0e9c419513b4ab28d5582851761f0acc3a1ef3befc4ec42e03"
+      "size_bytes": 10699,
+      "sha256": "66dfcbd9e4f4b82ae3d2d5d71639e4c674941f72d83e4b7314a6dc69516e3976"
     },
     {
       "path": "requirements-lock.txt",
@@ -725,8 +735,8 @@
     },
     {
       "path": "scripts/m3a3_octant_p2.py",
-      "size_bytes": 5969,
-      "sha256": "fb8fabd12aa97f6c66cd69e69486d6530e7071a90d59a1f67513f9c85aa79bed"
+      "size_bytes": 6806,
+      "sha256": "628a7bd1df05a9314edb8b88a1de59d102d731e13fe80ac9d6c4ea98f97392ea"
     },
     {
       "path": "scripts/m3a3_octant_recovery.py",
@@ -859,9 +869,14 @@
       "sha256": "da54cdd733364f468c0bef3972367d94ce9d87d1565fbefe643a823549ff8369"
     },
     {
+      "path": "scripts/verify_remote_outputs.py",
+      "size_bytes": 8408,
+      "sha256": "8a6920cfc713322205967a64c5e8295ec7a07a68dbdc244ab85a0c309c98cd1e"
+    },
+    {
       "path": "SESSION_HANDOFF.md",
-      "size_bytes": 54552,
-      "sha256": "1d6a1b666604d974994e03a82f1149ed4832269c6febd208e4f0e56facd41922"
+      "size_bytes": 57025,
+      "sha256": "0490068db2168cce1f6935e6a72ad44597c3bb4a89538dc3406c06d494f86f8f"
     },
     {
       "path": "src/iontrap_rng/__init__.py",
@@ -934,6 +949,11 @@
       "sha256": "2c8f3c266c4b17f048b6e238e122d3a662e06b279a79fc372441e9341a6c6cd4"
     },
     {
+      "path": "tests/remote_validation_tests.ps1",
+      "size_bytes": 2933,
+      "sha256": "533ae81d1b8abaeff91240edb7705345bf8445b22a669c8f9d9e1b2acb9712d8"
+    },
+    {
       "path": "tests/test_fem_fields.py",
       "size_bytes": 862,
       "sha256": "9efd49749146af17633af55ff394ce9d94a7da4a6568eac3c74a4a1eb74c61ad"
@@ -979,6 +999,11 @@
       "sha256": "2526ad7ec2f921facf4ad1cc3cce0d4832b2d7695025642342c883a34a38cd42"
     },
     {
+      "path": "tests/test_remote_output_validation.py",
+      "size_bytes": 3017,
+      "sha256": "55251242c263ccb0cc1fadc09196c03155db15e93b3a6d651fd91245e292cc88"
+    },
+    {
       "path": "tests/test_species_adaptive.py",
       "size_bytes": 1414,
       "sha256": "f808c0a94600f2d248eed77b54b37b13b9b502e4f8eeab3b06ec4ace7888f105"
@@ -993,8 +1018,8 @@
     },
     {
       "path": "PUBLICATION_MANIFEST.json",
-      "size_bytes": 35800,
-      "sha256": "188bff20840d41dc2b59cdfa99a0540600f61babb805ec9b85daf1188da4d2e6",
+      "size_bytes": 36869,
+      "sha256": "138dee4679a1951f90688f02054f28f54a8a1448dab7c4a158aed45f5f31ceef",
       "reason": "manifest does not hash itself"
     }
   ]

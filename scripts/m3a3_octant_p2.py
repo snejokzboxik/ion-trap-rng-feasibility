@@ -5,7 +5,7 @@ under all three coordinate reflections, while individual terminal excitations
 do not generally share that parity.
 """
 from __future__ import annotations
-import json, sys, time
+import json, sys, time, hashlib, os
 from pathlib import Path
 import numpy as np
 from scipy.sparse.linalg import splu
@@ -96,4 +96,19 @@ def run(tag='plateau018', solve=False):
 if __name__=='__main__':
     import argparse
     ap=argparse.ArgumentParser();ap.add_argument('--tag',default='plateau018');ap.add_argument('--solve',action='store_true');a=ap.parse_args()
-    res=run(a.tag,a.solve);(ROOT/'results'/f'm3a3_octant_boundary_{a.tag}.json').write_text(json.dumps(res,indent=2),encoding='utf-8');print(json.dumps(res,indent=2))
+    res=run(a.tag,a.solve)
+    mesh_path=ROOT/'results'/f'm3a3_octant_mesh_{a.tag}.npz'
+    res['input_mesh_sha256']=hashlib.sha256(mesh_path.read_bytes()).hexdigest()
+    if a.solve:
+        fields_path=ROOT/'results'/f'm3a3_octant_fields_{a.tag}.npz'
+        res.update({'solver_completed':True,'solver_exit_code':0,
+                    'config_sha256':os.environ.get('IONTRAP_RUN_CONFIG_SHA256'),
+                    'solution_sha256':hashlib.sha256(fields_path.read_bytes()).hexdigest(),
+                    'completed_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())})
+    # Keep the pre-existing mesh-only boundary audit immutable; solved-field
+    # audit records are written to a distinct output name.
+    audit_name=(f'm3a3_octant_solve_boundary_{a.tag}.json' if a.solve
+                else f'm3a3_octant_boundary_{a.tag}.json')
+    audit_path=ROOT/'results'/audit_name
+    audit_path.write_text(json.dumps(res,indent=2),encoding='utf-8')
+    print(json.dumps(res,indent=2))

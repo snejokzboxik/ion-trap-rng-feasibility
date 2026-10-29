@@ -3,6 +3,12 @@
   "reference_stage": "M3a3 symmetry-reduced octant P2 electrostatics",
   "mesh_tag": "plateau014",
   "existing_mesh_required": "results/m3a3_octant_mesh_plateau014.npz",
+  "mesh_sha256": "6512cb9d47a46c8971eeaf610fce1aab901a143bc56a5de0b37cd76bf9e38bdb",
+  "mesh_audit_required": "results/m3a3_octant_mesh_plateau014.json",
+  "mesh_audit_sha256": "ddc3756ba90549435762b3ce43a4d82103e335d1b9734800e42c5c7bf2a1ece3",
+  "expected_mesh_vertices": 9335,
+  "expected_mesh_tetrahedra": 39615,
+  "expected_p2_dofs": 63759,
   "python": "3.12",
   "threads": 1,
   "minimum_free_memory_gib": 13,
@@ -10,7 +16,8 @@
   "reserved_memory_gib": 5,
   "minimum_free_disk_gib": 10,
   "max_worker_memory_gib": 8,
-  "outputs": ["results/m3a3_octant_fields_plateau014.npz", "results/m3a3_octant_boundary_plateau014.json"],
+  "maximum_preflight_cpu_utilization_percent": 25,
+  "outputs": ["results/m3a3_octant_fields_plateau014.npz", "results/m3a3_octant_solve_boundary_plateau014.json"],
   "stop_policy": "refuse to launch if preflight or configured memory guard fails; never kill other jobs",
   "scope": "single sequential P2 solve only; no sweep, trajectory, entropy, or RF full-wave solve"
 }
