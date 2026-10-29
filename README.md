@@ -26,4 +26,4 @@ The species comparison and adaptive marking utility are analytical/preparation t
 
 ## Cite and contact
 
-No publication DOI or public repository URL exists yet. Cite individual primary sources listed in the literature audit and in the reports. Repository history/publication is pending reauthentication of the GitHub CLI account.
+Public repository: [github.com/snejokzboxik/ion-trap-rng-feasibility](https://github.com/snejokzboxik/ion-trap-rng-feasibility). The repository contains the reviewed standalone project history and was verified by fresh public clone and regression tests. No publication DOI exists yet. Cite individual primary sources listed in the literature audit and reports.

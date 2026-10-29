@@ -310,7 +310,7 @@ At ideal fixed (|q|=.2), 10V differential peak, (r_0=1\,\mu m), script RF freque
 
 ### Publication status / repository boundary
 
-No `.git` existed at project root or parents. Project root is separate from sibling/parent impedance materials. `gh auth status` reports account token invalid. GitHub connector can inspect repositories but exposes no repository-creation API. Per R0 stop condition, do not claim a public repo/push. Reauthenticate using `gh auth login -h github.com`, then create only `ion-trap-rng-feasibility`, push only this project directory, and verify actual GitHub URL/commit and a fresh clone. Candidate publication audit excludes cache, `.venv`, pytest temp, and `LITERATURE_SESSION_NOTES.json` (unassessed redistribution rights of embedded search snippets); curated literature audit is kept. No license file or license grant included.
+At the end of Stage R0, no `.git` existed at the project root or parents and GitHub CLI auth was unavailable. R0.1 resolved this by creating and pushing the standalone local project only. Project root remains separate from sibling/parent impedance materials. Publication audit excludes cache, `.venv`, pytest temp, and `LITERATURE_SESSION_NOTES.json` (unassessed redistribution rights of embedded search snippets); curated literature audit is kept. No license file or license grant included.
 
 ### Remote workflow
 
@@ -320,12 +320,24 @@ Target host Ryzen 5 7430U / ~16GiB, possibly shared. Config requests one sequent
 
 1. Complete `python scripts/audit_publication.py`, inspect manifest/file list and verify excluded content.
 2. Run `..\\..\\.venv\\Scripts\\python.exe -m pytest -q --basetemp results\\pytest_r0` and `python scripts/compare_species.py`; generated JSON is `results/r0_species_comparison.json`.
-3. Reauthenticate GitHub CLI; create dedicated public repository, push only this folder and validate clean clone/tests. No repository URL or remote commit exists yet.
+3. R0.1 created the public repository and verified a fresh clone; see the latest R0.1 section below for URL and SHA status.
 4. Do not execute remote FEM until explicit authorization; after approval run `remote/setup_windows.ps1`, preflight and dry run, then at most one `.014` P2 solve if resource gates pass.
 5. Do not start deterministic ion trajectories until DC force convergence is repaired; no stochastic/entropy/RNG work was authorized by R0.
 
 ### Validation and versioning details
 
-Local regression suite passed **37 tests** using the existing Python 3.12.10 environment. Four PowerShell scripts parsed successfully with the native PowerShell AST parser. A clean file snapshot exported from the local Git commit (196 tracked files) passed the same 37 tests and regenerated the species JSON. Direct `git clone` was blocked by the Windows sandbox/MSYS named-object permission error before checkout; this is not a verified public clone. Current local commit is recorded in the final turn report; no remote exists. Git author metadata was changed to the connected account's GitHub noreply form before public preparation; the original personal email is not in the commit object.
+The Stage R0 local regression suite passed **37 tests** using Python 3.12.10. Four PowerShell scripts parsed successfully. An archive snapshot also passed 37 tests before publication. During R0.1, an actual public `git clone` succeeded, its tracked inventory matched the local project (196 files), and all 37 tests passed in the clone. The remote initial SHA matched the original local commit. Git author metadata uses the connected account's GitHub noreply form; personal email is not in the commit object.
 
 **Next step only after new user authorization:** one bounded adaptive P2 octant refinement with an independent force-functional/error estimator and improved central element quality. If that still cannot resolve DC-force uncertainty, separately scope a P3 or boundary-element benchmark. Do not restart trajectory dynamics or stochastic/entropy/RNG modeling until the PDE force gate and stability-margin uncertainty are acceptable. Preserve the M3a.2 and M3a.3 artifacts; do not modify the adjacent impedance research.
+
+## Stage R0.1 — public publication completed (29 October 2026)
+
+- Public URL: https://github.com/snejokzboxik/ion-trap-rng-feasibility
+- Visibility verified as `PUBLIC` by `gh repo view`.
+- Initial pushed scientific commit: `aa73cfb439f3f439bcbf2087ff983c53162c8b28`; remote `main` initially matched local HEAD.
+- Fresh public clone: `research/_r0_1_public_clone_verify_20261029`; clone inventory exactly matched local tracked inventory (196 files), and 37/37 tests passed in the clone using the available Python 3.12.10 dependency environment. Clone working tree was clean.
+- Publication manifest: 195 non-self files, full SHA-256 match; 0 secret-scan findings; no tracked file >50MB, largest 5,711,193 bytes; no PDF files. `LITERATURE_SESSION_NOTES.json` remains untracked/ignored, excluded for unresolved redistribution rights. No license file/grant added.
+- A follow-up commit updates README, manifest generator/manifest, roadmap, summary, remote guide, and this handoff to reflect the publication. This follow-up was pushed and checked so local and remote `main` match at the end of R0.1.
+- No FEM, remote compute, trajectories, stochastic dynamics, entropy extraction or RNG bit generation was run during R0.1.
+
+For remote Windows setup, clone the public URL above, then from the clone root run `./remote/setup_windows.ps1 -DryRun`, `./remote/setup_windows.ps1`, `./remote/preflight.ps1 -DryRun`, and `./remote/run_fem.ps1 -DryRun`. A real FEM launch remains separately gated and was not authorized/launched in R0.1.

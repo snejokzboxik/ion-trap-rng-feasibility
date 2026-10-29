@@ -4,8 +4,8 @@
 
 ## Чистая установка
 
-1. После публикации клонировать публичный репозиторий в отдельную папку проекта. До фактического GitHub push URL ещё не существует; не использовать родительский репозиторий `impedance_semiconductor_trap` как clone target.
-2. Установить 64-bit Python 3.12 и Git для Windows. В PowerShell из корня проекта выполнить `.emotesetup_windows.ps1 -DryRun`, затем при готовности `.emotesetup_windows.ps1`. Установка выполняется в локальную `.venv`, lock содержит проверенные версии NumPy 2.5.3, SciPy 1.18.1, PyYAML 6.0.3, scikit-fem 12.0.2, Gmsh 4.15.2, Matplotlib 3.11.2 и pytest 9.1.1.
+1. Репозиторий опубликован: `git clone https://github.com/snejokzboxik/ion-trap-rng-feasibility.git`. Клонировать в отдельную папку проекта; не использовать родительский репозиторий `impedance_semiconductor_trap` как clone target.
+2. Установить 64-bit Python 3.12 и Git для Windows. В PowerShell из корня проекта выполнить `./remote/setup_windows.ps1 -DryRun`, затем при готовности `./remote/setup_windows.ps1`. Установка выполняется в локальную `.venv`, lock содержит проверенные версии NumPy 2.5.3, SciPy 1.18.1, PyYAML 6.0.3, scikit-fem 12.0.2, Gmsh 4.15.2, Matplotlib 3.11.2 и pytest 9.1.1.
 3. Проверить конфигурацию и тесты до mesh/solver запуска. Python lock фиксирует top-level пакеты, но не платформенные транзитивные wheels; для межкомпьютерной научной воспроизводимости фиксировать Python minor, `pip freeze`, OS/build и Gmsh бинарную версию в manifest после установки.
 
 ## Preflight и рекомендуемый первый FEM run
@@ -16,7 +16,7 @@
 
 Текущий P2 матричный оператор Laplace с зафиксированным grounded enclosure положительно определён после наложения Dirichlet DOF, так что CG с SPD-предобуславливателем физически/математически подходит. Наиболее перспективный sparse-memory кандидат — smoothed-aggregation algebraic multigrid (AMG) как preconditioner; SciPy CG API прямо требует Hermitian positive definite A/M. Однако **никакой iterative/AMG solve не валидирован для данной P2 mesh** и AMG может также хранить значительную иерархию. Перед применением к `.014` нужен небольшой контрольный benchmark на `.018`: сравнить CG+AMG с SuperLU по true residual (||b-Ax||/||b||), центральной DC силе/Hessian/flux, времени и пиковому RSS; назначить tolerances по observable sensitivity, а не только solver residual. Если амг-настройка не держит нужную силу, оставаться на direct solve/увеличить ресурс либо прекратить. Источники API: [SciPy CG](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.cg.html), [PyAMG smoothed aggregation](https://pyamg.readthedocs.io/en/latest/generated/pyamg.aggregation.html).
 
-Команды:
+Команды после clone:
 
 ```powershell
 .\remote\setup_windows.ps1 -DryRun
@@ -24,7 +24,7 @@
 .\remote\run_fem.ps1 -DryRun
 # Только после явного разрешения на запуск и пройденного ресурсного preflight:
 .\remote\run_fem.ps1 -Execute
-.\remote_collect_results.ps1 -Destination D:\iontrap-results -DryRun
+.\remote\collect_results.ps1 -Destination D:\iontrap-results -DryRun
 ```
 
 Solver не поддерживает безопасный checkpoint внутри SuperLU factorization; прерывание собственного процесса может оставить неполный output, который verifier должен отклонить. Run wrapper наблюдает за рабочим набором собственного Python процесса и общей свободной RAM, прекращает только этот FEM-процесс при пересечении настроенных границ, не трогает фоновые задачи, не меняет их приоритет и не повторяет задачу. Это polling guard, не абсолютная защита от очень быстрого скачка памяти. Успех проверки файлов — проверка комплектности, не физической точности/сходимости.

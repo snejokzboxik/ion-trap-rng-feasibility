@@ -80,5 +80,5 @@ M1/M1.5 и M2a/M2a.1 прошли ограниченную аналитику и
 
 Главный риск RNG — конкуренция измеримости и сохранения термодинамического движения. FDT связывает thermal excitation с damping/readout loading; охлаждение, signal bandwidth, lifetime и power нельзя считать независимыми. Поверхностный шум для конкретного Si/oxide неизвестен и может одновременно давать entropy и heating/loss. Опубликован image-current detection электронов в room-temperature Paul trap, но не CMOS-integrated single-electron RNG. Новые отчёты и machine-readable реестр сохранены. R0 remote setup не исполнялся; первый ограниченный `.014` P2 run условен по RAM/disk и approval. M3a.3 numerical NO-GO для дальнейшей динамики остаётся в силе.
 
-Публичная GitHub публикация не выполнена: CLI токен невалиден; доступный connector не позволяет создать новый репозиторий. См. `SESSION_HANDOFF.md` и `PUBLICATION_MANIFEST.json`.
+Публичный репозиторий создан: [ion-trap-rng-feasibility](https://github.com/snejokzboxik/ion-trap-rng-feasibility). R0.1 сверил public visibility, локальный и удалённый SHA, опубликовал инвентарь из 196 файлов и проверил настоящий свежий clone; 37 тестов прошли в clone. Публикация документационного handoff после этой проверки находится в текущем обновлении R0.1.
 

@@ -44,7 +44,12 @@ for name, reason in [("LITERATURE_SESSION_NOTES.json", "raw search-response snip
         excluded.append({"path": name, "size_bytes": p.stat().st_size, "sha256": sha256(p), "reason": reason})
 manifest = {
     "project": "ion-trap-rng-feasibility",
-    "status": "candidate publication set; not uploaded; GitHub authentication unavailable during Stage R0",
+    "status": "published public repository; verified fresh clone and tests during Stage R0.1",
+    "publication": {
+        "url": "https://github.com/snejokzboxik/ion-trap-rng-feasibility",
+        "visibility": "PUBLIC",
+        "initial_published_revision": "aa73cfb439f3f439bcbf2087ff983c53162c8b28",
+    },
     "license": "No license file or license grant included; rights compatibility not established.",
     "files": files, "excluded": excluded,
 }

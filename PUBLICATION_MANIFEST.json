@@ -1,6 +1,11 @@
 {
   "project": "ion-trap-rng-feasibility",
-  "status": "candidate publication set; not uploaded; GitHub authentication unavailable during Stage R0",
+  "status": "published public repository; verified fresh clone and tests during Stage R0.1",
+  "publication": {
+    "url": "https://github.com/snejokzboxik/ion-trap-rng-feasibility",
+    "visibility": "PUBLIC",
+    "initial_published_revision": "aa73cfb439f3f439bcbf2087ff983c53162c8b28"
+  },
   "license": "No license file or license grant included; rights compatibility not established.",
   "files": [
     {
@@ -15,8 +20,8 @@
     },
     {
       "path": "COMPUTATIONAL_ROADMAP.md",
-      "size_bytes": 34399,
-      "sha256": "ffa9d1288dc47865a6fcc1bbb7c0d4a357f28b03f3d5a812174785ee7464a5f6"
+      "size_bytes": 35765,
+      "sha256": "5a1245452fe065d8c6295dab3f3b0464552dcad95fe86b43db31baf439dd8ca0"
     },
     {
       "path": "configs/m1_baseline.yaml",
@@ -140,8 +145,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3152,
-      "sha256": "59f82471425647986f01363ee8716fb4e376427ff529734a003a78d1c3a98b8f"
+      "size_bytes": 3288,
+      "sha256": "4173ef0d06b0392b5d76bf5267ca5eade577c2c329fc27488d18948b39d1a665"
     },
     {
       "path": "remote/collect_results.ps1",
@@ -165,8 +170,8 @@
     },
     {
       "path": "REMOTE_FEM_EXECUTION_GUIDE_RU.md",
-      "size_bytes": 8090,
-      "sha256": "954844b15a3327c573442eecb7e2125b3c08e8d1025772e547e25b3dce3740b1"
+      "size_bytes": 8078,
+      "sha256": "605d26568c644c0e9c419513b4ab28d5582851761f0acc3a1ef3befc4ec42e03"
     },
     {
       "path": "requirements-lock.txt",
@@ -180,8 +185,8 @@
     },
     {
       "path": "RESEARCH_SUMMARY_RU.md",
-      "size_bytes": 16177,
-      "sha256": "367bba52d05bbe9f61ed3accbd726a3665c5de08cdeef3c30bcd83eb597e56df"
+      "size_bytes": 16460,
+      "sha256": "bd1dda2995342aa9bc5cd393c567456e550c56cee9551230aff6cd2fb01bc961"
     },
     {
       "path": "results/figures/m1_analytical_screen.png",
@@ -670,8 +675,8 @@
     },
     {
       "path": "scripts/audit_publication.py",
-      "size_bytes": 2801,
-      "sha256": "9e0f6912abd9cbcc2f4564c2707100561e4b4a5df7b1ca65341960892f815237"
+      "size_bytes": 3005,
+      "sha256": "04f8fdfe8082e6ac0e726b3153e97a0d75f847a6f5add9705382f93a75bb8d41"
     },
     {
       "path": "scripts/compare_species.py",
@@ -855,8 +860,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "size_bytes": 53476,
-      "sha256": "4d13a5ca387ef77839be17867fb9c8e3d92fedfb77956d73e7fa11ecb9e3eb9c"
+      "size_bytes": 54552,
+      "sha256": "1d6a1b666604d974994e03a82f1149ed4832269c6febd208e4f0e56facd41922"
     },
     {
       "path": "src/iontrap_rng/__init__.py",
@@ -989,7 +994,7 @@
     {
       "path": "PUBLICATION_MANIFEST.json",
       "size_bytes": 35800,
-      "sha256": "ae53ce1837c2e320b76f2e1953903863aa29122d4886c9528bc1bbf51599b4f2",
+      "sha256": "188bff20840d41dc2b59cdfa99a0540600f61babb805ec9b85daf1188da4d2e6",
       "reason": "manifest does not hash itself"
     }
   ]
